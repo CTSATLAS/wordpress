@@ -1,0 +1,22 @@
+{
+  "name": "plugins",
+  "version": "0.0.0",
+  "homepage": "https://github.com/CTSATLAS/wordpress",
+  "description": "Wordpress plugins",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "worpress",
+    "atlas"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "slate-kit": "git://github.com/wp-presskit/slate-kit",
+    "wp.autoload": "git://github.com/sjsandy/wp.autoload"
+  }
+}
