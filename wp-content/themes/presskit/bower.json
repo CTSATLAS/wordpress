@@ -1,0 +1,16 @@
+{
+  "name": "presskit",
+  "homepage": "https://github.com/ManagedPixels/presskit",
+  "_release": "9682875aac",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9682875aac4f138d5b11444d4bebe00da8c68725"
+  },
+  "_source": "git://github.com/ManagedPixels/presskit.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/ManagedPixels/presskit",
+  "_direct": true,
+  "version": "0.0.0",
+  "license": "MIT"
+}
