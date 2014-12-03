@@ -11,6 +11,29 @@
   "_target": "*",
   "_originalSource": "git://github.com/ManagedPixels/presskit",
   "_direct": true,
-  "version": "0.0.0",
-  "license": "MIT"
+  "version": "0.5",
+  "license": "MIT",
+  "description": "A wordpess starter theme",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "wordpress",
+    "themes"
+  ],
+  "authors": [
+    "shawnsandy"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/",
+    "test",
+    "tests"
+  ]
 }

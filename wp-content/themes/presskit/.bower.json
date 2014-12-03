@@ -9,6 +9,6 @@
   },
   "_source": "git://github.com/ManagedPixels/presskit.git",
   "_target": "*",
-  "_originalSource": "git://github.com/ManagedPixels/presskit",
+  "_originalSource": "git://github.com/ManagedPixels/presskit.git",
   "_direct": true
 }
