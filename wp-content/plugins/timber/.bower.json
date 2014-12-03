@@ -1,0 +1,14 @@
+{
+  "name": "timber",
+  "homepage": "https://github.com/jarednova/timber",
+  "version": "0.20.8",
+  "_release": "0.20.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.20.8",
+    "commit": "916f1105d36a715905c130d830a96e890949b30a"
+  },
+  "_source": "git://github.com/jarednova/timber.git",
+  "_target": "~0.20.8",
+  "_originalSource": "git://github.com/jarednova/timber"
+}
