@@ -1,0 +1,41 @@
+{
+  "name": "slate-kit",
+  "homepage": "https://github.com/wp-presskit/slate-kit",
+  "description": "slate-kit",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "WordPress",
+    "WP",
+    "Admin",
+    "theme"
+  ],
+  "authors": [
+    "shawn sandy"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lesshat": "~3.0.2"
+  },
+  "_release": "2abd5c6206",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2abd5c620663e34d87a739d07c52e9292bf3216f"
+  },
+  "_source": "git://github.com/wp-presskit/slate-kit.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/wp-presskit/slate-kit"
+}

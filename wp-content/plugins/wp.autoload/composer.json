@@ -1,0 +1,19 @@
+{
+    "name": "shawnsandy/wordpress",
+    "description": "Composer for wordpress",
+    "license": "Mit",
+    "authors": [
+        {
+            "name": "shawnsandy",
+            "email": "shawnsandy04@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/class-loader": "2.6.*@dev",
+        "monolog/monolog": "1.0.*",
+        "mobiledetect/mobiledetectlib": "*"        
+    },
+    "autoload": {
+        "psr-4": {"MpLoader\\": "src/"}
+    }
+}

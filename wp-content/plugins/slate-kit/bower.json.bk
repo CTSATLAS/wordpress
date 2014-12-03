@@ -1,0 +1,33 @@
+{
+  "name": "slate-kit",
+  "version": "0.0.3",
+  "homepage": "https://github.com/wp-presskit/slate-kit",
+  "description": "slate-kit",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "WordPress",
+    "WP",
+    "Admin",
+    "theme"
+  ],
+  "authors": [
+    "shawn sandy"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lesshat": "~3.0.2"
+  }
+}
