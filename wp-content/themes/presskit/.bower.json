@@ -1,11 +1,11 @@
 {
   "name": "presskit",
   "homepage": "https://github.com/ManagedPixels/presskit",
-  "_release": "27d4765513",
+  "_release": "d196d37cc4",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "27d4765513560db0a9392ed4f599b4791dfe29bc"
+    "commit": "d196d37cc476e9e6ed9487c26c93eeeaae56a0e2"
   },
   "_source": "git://github.com/ManagedPixels/presskit.git",
   "_target": "*",
