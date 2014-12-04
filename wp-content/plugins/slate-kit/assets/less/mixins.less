@@ -3,3 +3,9 @@
 .gradient-adminmenu(){
     .background-image(linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%));
 }
+
+
+.rgba-colors(@color, @alpha: 1, @type: color) {
+
+    color: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
