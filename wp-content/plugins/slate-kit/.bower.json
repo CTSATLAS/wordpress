@@ -29,11 +29,11 @@
   "devDependencies": {
     "lesshat": "~3.0.2"
   },
-  "_release": "1a2c17073f",
+  "_release": "f314922048",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "1a2c17073f5d68d364fbb9b86b9cb0acb64a950c"
+    "commit": "f31492204859fb1e015ca41bf2031f1f52d5c822"
   },
   "_source": "git://github.com/wp-presskit/slate-kit.git",
   "_target": "*",
