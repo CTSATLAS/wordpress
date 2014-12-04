@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Slate-Kit
-Plugin URI: https://github.com/ryansommers/slate
-Description: A minimal clean, simplified WordPress Admin theme
-Link: Ryan Sommers
-Version: 1.0.8
-Author URI: http://ryansommers.com
+Plugin Name: Blank Slate
+Plugin URI: https://github.com/wp-presskit/slate-kit
+Description: A very minimal clean, simplified WordPress Admin theme originally based on the work of Ryan Sommers - Completely reworked the style added CSS pre-processor LESS and some more additional stuff
+Link:
+Version: 1.1.0
+Author URI: https://github.com/wp-presskit/slate-kit
 */
 
 function slate_kit_theme_files() {
