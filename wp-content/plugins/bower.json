@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "slate-kit": "git://github.com/wp-presskit/slate-kit",
-    "wp.autoload": "git://github.com/sjsandy/wp.autoload"
+    "wp.autoload": "git://github.com/sjsandy/wp.autoload",
+    "wp-pagenavi": "git://github.com/lesterchan/wp-pagenavi"
   }
 }
