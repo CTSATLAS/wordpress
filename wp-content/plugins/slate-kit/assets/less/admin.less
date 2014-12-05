@@ -1,0 +1,35 @@
+/********** Shawn Sandy ************/
+
+
+ .admin() {
+   html.wp-toolbar {
+     padding-top: @menu-height;
+   }
+
+   #wpwrap {
+     background: @menu-background;
+
+   }
+
+
+   .sticky-menu #adminmenuwrap {
+     position: fixed;
+     z-index: 9999;
+     height: 100% !important;
+     background-color:  darken(@menu-background, 3%);
+   }
+
+   #wpcontent {
+     padding-left: 0;
+
+     #wpbody {
+       //border-left: 1px solid #c7c7c7;
+       box-sizing: border-box !important;
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-top: @padding-top;
+       background-color: @menu-background;
+     }
+   }
+
+ }
