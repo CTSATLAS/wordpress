@@ -18,6 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "presskit": "git://github.com/ManagedPixels/presskit.git"
+    "presskit": "git://github.com/ManagedPixels/presskit.git",
+    "pwc": "git@bitbucket.org:shawnsandy/pwc.git"
   }
 }
