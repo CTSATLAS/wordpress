@@ -21,7 +21,11 @@ body {
 }
 #page {
     color: #404040;
-    padding-top: 80px;
+    padding-top: 120px;
+    max-width: 1800;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 h1,
 h2,
@@ -73,15 +77,18 @@ figure {
 /* ---- header ---- */
 
 #page > header {
-    height: 350px;
-    min-height: 350px;
+    height: 450px;
+    min-height: 450px;
     text-align: center;
-    background-color: #fafafa;
+    background-color: RGBA(1, 27, 140, 1);
+    background-image: url("flag-medal-and-cap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #808080;
     padding-top: 0;
 }
 .home #page > header {
-    height: 500px;
+    height: 350px;
 }
 header h1 {
     font-size: 83px;
@@ -318,4 +325,26 @@ a {
 a:hover, a:visited {
     text-decoration: none;
     border-bottom: none;
+}
+
+
+.navbar-brand,
+.navbar-nav li a,
+.navbar-brand,
+.bar li a,
+nav .bar li a {
+    line-height: 120px;
+    height: 120px;
+    padding-top: 0;
+}
+
+nav .navbar-brand img {
+    height: 90px;
+    width: auto;
+}
+
+
+.navbar {
+    /*background-color: RGBA(1, 32, 131, 0.8);*/
+    background-color: RGBA(255, 255, 255, 0.95);
 }

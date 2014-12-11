@@ -1,13 +1,43 @@
 {
   "name": "pwc",
-  "_release": "d196d37cc4",
+  "description": "Panwar Wordpress Theme",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "theme",
+    "wordpress"
+  ],
+  "authors": [
+    "shawnsandy04@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lesshat": "~3.0.2"
+  },
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1",
+    "core-icon": "Polymer/core-icon#~0.5.1",
+    "core-icons": "Polymer/core-icons#~0.5.1",
+    "core-iconset": "Polymer/core-iconset#~0.5.1"
+  },
+  "_release": "1646c30c24",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "d196d37cc476e9e6ed9487c26c93eeeaae56a0e2"
+    "commit": "1646c30c249a716303a1615811cbf31785b3786f"
   },
   "_source": "git@bitbucket.org:shawnsandy/pwc.git",
   "_target": "*",
-  "_originalSource": "git@bitbucket.org:shawnsandy/pwc.git",
-  "_direct": true
+  "_originalSource": "git@bitbucket.org:shawnsandy/pwc.git"
 }
