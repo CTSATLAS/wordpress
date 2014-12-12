@@ -34,7 +34,8 @@ h4,
 h5 {
     font-family: 'OpenSansSemibold';
     line-height: 1.5;
-    color: RGBA(121, 121, 121, 1);
+    color: rgba(1, 27, 140, 0.9);
+    font-weight: normal !important;
 }
 .sidebar h1,
 .sidebar h2,
@@ -57,7 +58,7 @@ p {
 #page > main,
 #page > section,
 #page > footer {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 figure {
     margin-bottom: 10px;
@@ -76,19 +77,23 @@ figure {
 }
 /* ---- header ---- */
 
-#page > header {
-    height: 450px;
-    min-height: 450px;
+#page > header, .t-wrapper {
+    height: 250px;
+    min-height: 250px;
     text-align: center;
-    background-color: RGBA(1, 27, 140, 1);
+
     background-image: url("flag-medal-and-cap.jpg");
+    background-color: RGBA(1, 27, 140, 1);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     color: #808080;
     padding-top: 0;
 }
-.home #page > header {
-    height: 350px;
+.home #page > header, .home .t-wrapper {
+    height: 450px;
+    min-height: 450px;
+    /*border-bottom: solid 5px #D0021B;*/
 }
 header h1 {
     font-size: 83px;
@@ -306,18 +311,18 @@ footer h1 {
     border-top: 1px solid RGBA(249, 249, 249, 0.5);
 }
 footer {
-    border-top: 1px solid RGBA(249, 249, 249, 0.5);
+    border-top: 1px solid RGBA(255, 255, 255, 0.5);
     padding: 40px;
     margin-top: 20px;
 }
 footer .fa {
-    color: RGBA(121, 121, 121, 0.3);
+    color: RGBA(255, 255, 255, 0.5);
 }
 footer .fa:hover {
-    color: RGBA(121, 121, 121, 0.8);
+    color: RGBA(255, 255, 255, 0.85);
 }
 a {
-    color: RGBA(121, 121, 121, 1);
+    color: rgba(1, 27, 140, 0.9);
 /*    border-bottom: 1px dotted RGBA(121, 121, 121, 0.3);*/
 /*    padding-bottom: 3px;*/
 }
@@ -332,7 +337,8 @@ a:hover, a:visited {
 .navbar-nav li a,
 .navbar-brand,
 .bar li a,
-nav .bar li a {
+nav .bar li a
+{
     line-height: 120px;
     height: 120px;
     padding-top: 0;
@@ -343,8 +349,8 @@ nav .navbar-brand img {
     width: auto;
 }
 
-
-.navbar {
-    /*background-color: RGBA(1, 32, 131, 0.8);*/
-    background-color: RGBA(255, 255, 255, 0.95);
+.navbar-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
