@@ -31,11 +31,11 @@
     "core-icons": "Polymer/core-icons#~0.5.1",
     "core-iconset": "Polymer/core-iconset#~0.5.1"
   },
-  "_release": "66214f487b",
+  "_release": "0bb81afbf2",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "66214f487bb2b37880c0c306a981100c3c4e9410"
+    "commit": "0bb81afbf2178d12adb3eab92fab8f269b561fad"
   },
   "_source": "git@bitbucket.org:shawnsandy/pwc.git",
   "_target": "*",
