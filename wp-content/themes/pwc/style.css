@@ -1,0 +1,101 @@
+/*
+Theme Name: Panwar
+Theme URI: http://
+Author: Shawn Sandy
+Author URI: http://
+Description: A simple wordpress theme stater toolkit
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: panwar
+*/
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Crete Round', serif;
+}
+#mission p.lead {
+  color: rgba(1, 27, 140, 0.6);
+}
+.navbar {
+  /*background-color: RGBA(1, 32, 131, 0.8);*/
+  background-color: rgba(255, 255, 255, 0.99);
+  /*background-color: rgba(208, 2, 27, 0.98);*/
+  border-top: solid 5px #D0021B;
+  border-bottom: solid 1px #D0021B;
+  box-sizing: border-box;
+  color: rgba(1, 27, 140, 0.9);
+}
+.t-wrapper {
+  position: relative;
+  background-image: none !important;
+  background-color: transparent;
+}
+.title-bars {
+  background-color: rgba(208, 2, 27, 0.9);
+  /*height: 48px;*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+}
+.blue-bg {
+  background-color: #415c9d;
+}
+.red-bg {
+  background-color: #d0021b;
+}
+.home #features {
+  /*padding-top: 20px;*/
+  /*background-color: rgba(1, 27, 140, 0.8);*/
+  /*color: #fff;*/
+}
+.blue-bg,
+.red-bg {
+  height: 270px;
+  color: #fff;
+}
+.blue-bg h1,
+.red-bg h1 {
+  color: #fff;
+}
+.blue-bg {
+  background-color: #415c9d;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 20px;
+}
+.red-bg {
+  background-color: #d0021b;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 20px;
+}
+footer {
+  background-color: rgba(1, 27, 140, 0.8);
+  color: #fff;
+}
+footer .info {
+  padding-bottom: 60px;
+}
+footer ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+footer ul li {
+  list-style: none;
+}
+footer p,
+footer h1 {
+  color: #fff;
+}
+.fonts.crete {
+  font-family: 'Crete Round', serif;
+}
