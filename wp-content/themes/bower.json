@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "presskit": "git://github.com/ManagedPixels/presskit.git",
-    "pwc": "git@bitbucket.org:shawnsandy/pwc.git"
+    "pwc": "git@bitbucket.org:shawnsandy/pwc.git",
+    "ninja-forms": "git://github.com/wpninjas/ninja-forms#~2.8.11"
   }
 }
