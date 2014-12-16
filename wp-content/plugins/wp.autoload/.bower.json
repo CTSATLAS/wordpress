@@ -1,11 +1,11 @@
 {
   "name": "wp.autoload",
   "homepage": "https://github.com/sjsandy/wp.autoload",
-  "_release": "28178ad45f",
+  "_release": "6294f3861a",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "28178ad45f492b70d382fffba8fb8540101f719e"
+    "commit": "6294f3861a12992432c2aa1a37cd90b9fcc54eb0"
   },
   "_source": "git://github.com/sjsandy/wp.autoload.git",
   "_target": "*",

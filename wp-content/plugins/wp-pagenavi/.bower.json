@@ -1,0 +1,13 @@
+{
+  "name": "wp-pagenavi",
+  "homepage": "https://github.com/lesterchan/wp-pagenavi",
+  "_release": "10aaa1b79f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "10aaa1b79ff51121a0cfa09ce82e664bf309fe97"
+  },
+  "_source": "git://github.com/lesterchan/wp-pagenavi.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/lesterchan/wp-pagenavi"
+}
