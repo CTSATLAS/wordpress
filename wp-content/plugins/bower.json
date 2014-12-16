@@ -19,6 +19,7 @@
     "slate-kit": "git://github.com/wp-presskit/slate-kit",
     "wp.autoload": "git://github.com/sjsandy/wp.autoload",
     "wp-pagenavi": "git://github.com/lesterchan/wp-pagenavi",
-    "pwc": "git@bitbucket.org:shawnsandy/pwc.git"
+    "pwc": "git@bitbucket.org:shawnsandy/pwc.git",
+    "ninja-forms": "git://github.com/wpninjas/ninja-forms#~2.8.11"
   }
 }
