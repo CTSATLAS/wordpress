@@ -1,0 +1,14 @@
+{
+  "name": "jetpack",
+  "homepage": "https://github.com/Automattic/jetpack",
+  "version": "3.2.1",
+  "_release": "3.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.2.1",
+    "commit": "e9a1158317cbee15142c1f47b300563c4f0fdf23"
+  },
+  "_source": "git://github.com/Automattic/jetpack.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/Automattic/jetpack"
+}
