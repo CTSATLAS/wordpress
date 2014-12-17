@@ -1,0 +1,15 @@
+{
+  "name": "constant-contact-api",
+  "homepage": "https://github.com/wp-plugins/constant-contact-api",
+  "version": "3.1.5",
+  "_release": "3.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.1.5",
+    "commit": "d0fbfc7af476e24288635a9f51ce76fef25a5a42"
+  },
+  "_source": "git://github.com/wp-plugins/constant-contact-api.git",
+  "_target": "~3.1.5",
+  "_originalSource": "git://github.com/wp-plugins/constant-contact-api",
+  "_direct": true
+}
