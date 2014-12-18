@@ -210,7 +210,7 @@ $press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_ty
 
 //load the 2 default widgets
 $press_widget = MpLoader\Utilities\Widget::factory();
-$press_widget->create_default();
+$press_widget->default_widget();
 $press_widget->add_widget('footer links', 'footer-links', 'Add links for the footer');
 //$press_widget->
 

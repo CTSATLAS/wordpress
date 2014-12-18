@@ -1,15 +1,14 @@
 {
   "name": "ninja-forms",
   "homepage": "https://github.com/wpninjas/ninja-forms",
-  "version": "2.8.11",
-  "_release": "2.8.11",
+  "version": "2.8.12",
+  "_release": "2.8.12",
   "_resolution": {
     "type": "version",
-    "tag": "v2.8.11",
-    "commit": "6d9b0572eeafa25b2840419bb9ccfe292765e16d"
+    "tag": "v2.8.12",
+    "commit": "ef7ecff5f1c62496cba2871ffd23dcd738cc8f11"
   },
   "_source": "git://github.com/wpninjas/ninja-forms.git",
   "_target": "~2.8.11",
-  "_originalSource": "git://github.com/wpninjas/ninja-forms",
-  "_direct": true
+  "_originalSource": "git://github.com/wpninjas/ninja-forms"
 }
