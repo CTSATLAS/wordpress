@@ -1,15 +1,14 @@
 {
   "name": "google-analytics-for-wordpress",
   "homepage": "https://github.com/Yoast/google-analytics-for-wordpress",
-  "version": "5.2.6",
-  "_release": "5.2.6",
+  "version": "5.2.7",
+  "_release": "5.2.7",
   "_resolution": {
     "type": "version",
-    "tag": "5.2.6",
-    "commit": "7ce8fc4fb78aca8c3a6f493697ffd27915d95f01"
+    "tag": "5.2.7",
+    "commit": "beeaf74d77bbc7823d7b17208a85d10e71cbe462"
   },
   "_source": "git://github.com/Yoast/google-analytics-for-wordpress.git",
   "_target": "~5.2.6",
-  "_originalSource": "git://github.com/Yoast/google-analytics-for-wordpress",
-  "_direct": true
+  "_originalSource": "git://github.com/Yoast/google-analytics-for-wordpress"
 }
