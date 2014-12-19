@@ -38,6 +38,9 @@ h4 {
 #mission p.lead {
   color: rgba(1, 27, 140, 0.6);
 }
+#features article {
+  padding-top: 30px;
+}
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
   background-color: rgba(255, 255, 255, 0.99);
@@ -121,6 +124,10 @@ footer a {
 footer a:hover {
   color: #fff;
   border: none;
+}
+footer p {
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 section#mission {
   padding-bottom: 40px;
