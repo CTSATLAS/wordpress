@@ -67,6 +67,7 @@ function add_to_context($data) {
 	$sidebars['info_4']       = Timber::get_widgets('info-4');
 	$sidebars['home_sidebar'] = Timber::get_widgets('home-sidebar');
 	$sidebars['footer_links'] = Timber::get_widgets('footer-links');
+	$sidebars['contact_us'] = Timber::get_widgets('contact-us');
 	$sidebars['primary_menu'] = new TimberMenu('primary');
 
 	$data['sidebars'] = $sidebars;
