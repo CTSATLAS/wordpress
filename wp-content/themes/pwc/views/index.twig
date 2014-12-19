@@ -1,7 +1,4 @@
 {% extends base_twig %}
-{% block mission %}{% endblock %} 
-{% block features %}{% endblock features %}
-{% block articles %}{% endblock articles %}
 {% block content %}	
 	{% for post in posts %}
 	{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
