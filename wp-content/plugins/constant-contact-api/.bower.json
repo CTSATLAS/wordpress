@@ -9,6 +9,6 @@
     "commit": "ede822dff925b33498e7612fc767dabedb1d659e"
   },
   "_source": "git://github.com/wp-plugins/constant-contact-api.git",
-  "_target": "~3.1.5",
+  "_target": "*",
   "_originalSource": "git://github.com/wp-plugins/constant-contact-api"
 }

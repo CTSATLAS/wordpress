@@ -19,11 +19,11 @@
     "slate-kit": "git://github.com/wp-presskit/slate-kit",
     "wp.autoload": "git://github.com/sjsandy/wp.autoload",
     "wp-pagenavi": "git://github.com/lesterchan/wp-pagenavi",
-    "ninja-forms": "git://github.com/wpninjas/ninja-forms#~2.8.11",
-    "google-analytics-for-wordpress": "git://github.com/Yoast/google-analytics-for-wordpress#~5.2.6",
+    "ninja-forms": "git://github.com/wpninjas/ninja-forms",
+    "google-analytics-for-wordpress": "git://github.com/Yoast/google-analytics-for-wordpress",
     "jetpack": "git://github.com/Automattic/jetpack",
-    "constant-contact-api": "git://github.com/wp-plugins/constant-contact-api#~3.1.5",
-    "akismet": "git://github.com/wp-plugins/akismet#~3.0.4",
+    "constant-contact-api": "git://github.com/wp-plugins/constant-contact-api",
+    "akismet": "git://github.com/wp-plugins/akismet",
     "custom-post-widget": "git://github.com/vanderwijk/custom-post-widget"
   }
 }
