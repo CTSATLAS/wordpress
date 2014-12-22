@@ -142,3 +142,6 @@ footer h1 {
 .fonts.crete {
   font-family: 'Crete Round', serif;
 }
+select {
+  min-height: 40px !important;
+}
