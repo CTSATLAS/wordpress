@@ -142,3 +142,14 @@ footer h1 {
 .fonts.crete {
   font-family: 'Crete Round', serif;
 }
+#ninja_forms_field_6 select {
+  height: 40px;
+  line-height: 40px;
+}
+form.ninja-forms-form select.form-control {
+  height: 30px;
+  line-height: 30px;
+}
+form.ninja-forms-form select.form-control {
+  padding-top: 40px;
+}
