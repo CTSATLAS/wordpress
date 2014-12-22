@@ -21,9 +21,9 @@
     "wp-pagenavi": "git://github.com/lesterchan/wp-pagenavi",
     "ninja-forms": "git://github.com/wpninjas/ninja-forms",
     "google-analytics-for-wordpress": "git://github.com/Yoast/google-analytics-for-wordpress",
-    "jetpack": "git://github.com/Automattic/jetpack",
+    "jetpack": "git://github.com/wp-plugins/jetpack",
     "constant-contact-api": "git://github.com/wp-plugins/constant-contact-api",
     "akismet": "git://github.com/wp-plugins/akismet",
-    "custom-post-widget": "git://github.com/vanderwijk/custom-post-widget"
+    "custom-post-widget": "github.com/wp-plugins/custom-post-widget"
   }
 }
