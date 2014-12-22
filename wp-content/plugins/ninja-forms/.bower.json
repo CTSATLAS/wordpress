@@ -9,6 +9,6 @@
     "commit": "e674eb5441141d22d18bf2641caff422f9dd8054"
   },
   "_source": "git://github.com/wpninjas/ninja-forms.git",
-  "_target": "~2.8.11",
+  "_target": "*",
   "_originalSource": "git://github.com/wpninjas/ninja-forms"
 }

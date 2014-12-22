@@ -90,7 +90,7 @@ figure {
     color: #808080;
     padding-top: 0;
 }
-.home #page > header, .home .t-wrapper {
+.home #page > header, #cover > header, .home .t-wrapper {
     height: 450px;
     min-height: 450px;
     /*border-bottom: solid 5px #D0021B;*/

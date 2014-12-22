@@ -9,7 +9,6 @@
     "commit": "ec5d5017735e86ac673034431332779e436fda7f"
   },
   "_source": "git://github.com/wp-plugins/akismet.git",
-  "_target": "~3.0.4",
-  "_originalSource": "git://github.com/wp-plugins/akismet",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "git://github.com/wp-plugins/akismet"
 }
