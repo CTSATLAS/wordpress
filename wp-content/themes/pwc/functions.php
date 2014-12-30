@@ -217,3 +217,18 @@ $press_widget->add_widget('contact us', 'contact-us', 'Contact information');
 
 
 endif ;
+
+//* Do NOT include the opening php tag
+ 
+//* Replace WordPress login logo with your own
+add_action('login_head', 'pwc_custom_login_logo');
+function pwc_custom_login_logo() {
+    echo '<style type="text/css">
+    h1 a { background-image:none !important; background-size: 311px 100px !important;height: 100px !important; width: 311px !important; margin-bottom: 0 !important; padding-bottom: 0 !important; }
+    .login form { margin-top: 10px !important; }
+    </style>';
+    
+//     echo '<style type="text/css">
+//        h1 a { background-image:url('. get_bloginfo( 'template_directory' ) .'/images/logo.jpg) !important; }
+//    </style>';
+}
