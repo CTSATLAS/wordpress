@@ -223,12 +223,10 @@ endif ;
 //* Replace WordPress login logo with your own
 add_action('login_head', 'pwc_custom_login_logo');
 function pwc_custom_login_logo() {
-    echo '<style type="text/css">
-    h1 a { background-image:none !important; background-size: 311px 100px !important;height: 100px !important; width: 311px !important; margin-bottom: 0 !important; padding-bottom: 0 !important; }
-    .login form { margin-top: 10px !important; }
+   
+     echo '<style type="text/css">
+        h1 a { background-image:url('. get_bloginfo( 'template_directory' ) .'/images/pwc-web-logo.png) !important; }
     </style>';
     
-//     echo '<style type="text/css">
-//        h1 a { background-image:url('. get_bloginfo( 'template_directory' ) .'/images/logo.jpg) !important; }
-//    </style>';
+    
 }
