@@ -61,6 +61,8 @@ h4 {
 .t-wrapper .navbar {
   min-height: 60px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
 }
 .t-wrapper .navbar-brand,
 .t-wrapper .navbar-nav li a,
