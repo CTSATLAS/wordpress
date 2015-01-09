@@ -40,6 +40,7 @@ h4 {
 }
 #mission p.lead {
   color: rgba(1, 27, 140, 0.6);
+  font-size: 18px;
 }
 #features article {
   padding-top: 30px;
@@ -177,4 +178,16 @@ form.ninja-forms-form select.form-control {
 }
 form.ninja-forms-form select.form-control {
   padding-top: 40px;
+}
+core-icon.svg-icon {
+  fill: rgba(1, 27, 140, 0.2) !important;
+  width: 80px;
+  height: 80px;
+}
+core-icon.ftr {
+  width: 36px;
+  height: 36px;
+}
+#top-link a {
+  color: #d0021b;
 }
