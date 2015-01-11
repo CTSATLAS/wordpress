@@ -30,6 +30,7 @@
     "polymer": "Polymer/polymer#~0.5.1",
     "core-icon": "Polymer/core-icon#~0.5.1",
     "core-icons": "Polymer/core-icons#~0.5.1",
-    "core-iconset": "Polymer/core-iconset#~0.5.1"
+    "core-iconset": "Polymer/core-iconset#~0.5.2",
+    "core-iconset-svg": "Polymer/core-iconset-svg#~0.5.2"
   }
 }
