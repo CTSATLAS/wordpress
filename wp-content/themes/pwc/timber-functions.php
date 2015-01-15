@@ -39,6 +39,7 @@ function add_to_context($data) {
 	/* this is where you can add your own data to Timber's context object */
 	$data['foo']          = 'bar';
 	$data['theme_url']    = get_stylesheet_directory_uri();
+	$data['parent_theme_url']    = get_template_directory_uri();
 	$data['is_logged_in'] = is_user_logged_in();
 	$data['theme_mod']    = get_theme_mods();
 	$data['options']      = wp_load_alloptions();
@@ -50,6 +51,7 @@ function add_to_context($data) {
 	$data['base_dir']         = WP_CONTENT_DIR;
 	$data['base_url']         = get_bloginfo('wpurl');
 	$data['theme_dir']        = get_stylesheet_directory();
+	$data['parent_theme_dir'] = get_template_directory();
 	$data['site_title']       = get_bloginfo('name');
 	$data['site_description'] = get_bloginfo('description');
 	$data['sample_widget']    = 'Please go to -- Admin > Apperance widgets and place any widgets you want to appear on your home page here';
@@ -60,14 +62,20 @@ function add_to_context($data) {
 
 	//sidebars
 	$sidebars['sidebar']      = Timber::get_widgets('primary-sidebar');
-	$sidebars['secondary']    = Timber::get_widgets('secondary-sidebar');
-	$sidebars['info_1']       = Timber::get_widgets('info-1');
-	$sidebars['info_2']       = Timber::get_widgets('info-2');
-	$sidebars['info_3']       = Timber::get_widgets('info-3');
-	$sidebars['info_4']       = Timber::get_widgets('info-4');
+	$sidebars['secondary']    = Timber::get_widgets('secondary-sidebar');	
 	$sidebars['home_sidebar'] = Timber::get_widgets('home-sidebar');
 	$sidebars['footer_links'] = Timber::get_widgets('footer-links');
+	$sidebars['footer_1'] = Timber::get_widgets('footer-1');
+	$sidebars['footer_2'] = Timber::get_widgets('footer-2');
+	$sidebars['footer_3'] = Timber::get_widgets('footer-3');
+	$sidebars['footer_links'] = Timber::get_widgets('footer-links');
 	$sidebars['contact_us'] = Timber::get_widgets('contact-us');
+	$sidebars['features'] = Timber::get_widgets('feature');
+	$sidebars['cover'] = Timber::get_widgets('cover');
+	$sidebars['pitch'] = Timber::get_widgets('pitch');
+
+	
+        
 	$sidebars['primary_menu'] = new TimberMenu('primary');
 
 	$data['sidebars'] = $sidebars;

@@ -29,15 +29,16 @@
     "polymer": "Polymer/polymer#~0.5.1",
     "core-icon": "Polymer/core-icon#~0.5.1",
     "core-icons": "Polymer/core-icons#~0.5.1",
-    "core-iconset": "Polymer/core-iconset#~0.5.1"
+    "core-iconset": "Polymer/core-iconset#~0.5.2",
+    "core-iconset-svg": "Polymer/core-iconset-svg#~0.5.2"
   },
-  "_release": "906b3fed63",
+  "_release": "3686e19cf6",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "906b3fed63568d4e5cb9aaa872f6c958e89645a2"
+    "commit": "3686e19cf6550f24caf1cbdcbed6db3a7ea1644e"
   },
-  "_source": "git@bitbucket.org:shawnsandy/pwc.git",
+  "_source": "git@bitbucket.org:shawnsandy/mission.git",
   "_target": "*",
-  "_originalSource": "git@bitbucket.org:shawnsandy/pwc.git"
+  "_originalSource": "git@bitbucket.org:shawnsandy/mission.git"
 }

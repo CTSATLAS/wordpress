@@ -1,5 +1,5 @@
 /*
-Theme Name: Panwar
+Theme Name: Mission
 Theme URI: http://
 Author: Shawn Sandy
 Author URI: http://
@@ -8,15 +8,38 @@ Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
-Text Domain: panwar
+Text Domain: mission
 */
+
+
+#page.no-nav {
+  padding-top: 0;
+}
+.home #page > header,
+#cover > header,
+.home .t-wrapper {
+  height: 500px;
+  background-position: center center;
+}
+#page > header,
+#cover > header,
+.t-wrapper {
+  color: #fff;
+  background-image: none;
+  background-color: #0a59c1;
+}
+#page > header h1,
+#cover > header h1,
+.t-wrapper h1 {
+  color: #fff0f0;
+}
 .navbar-brand,
 .navbar-nav li a,
 .navbar-brand,
 .bar li a,
 nav .bar li a {
-  line-height: 120px;
-  height: 120px;
+  line-height: 115px;
+  height: 115px;
   padding-top: 0;
 }
 nav .navbar-brand img {
@@ -34,23 +57,26 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Crete Round', serif;
   margin-top: 0;
   padding-top: 0;
 }
 #mission p.lead {
-  color: rgba(1, 27, 140, 0.6);
+  font-size: 18px;
+}
+#features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 1px #0a59c1;
 }
 #features article {
   padding-top: 30px;
 }
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
-  background-color: rgba(255, 255, 255, 0.99);
-  /*background-color: rgba(208, 2, 27, 0.98);*/
-  border-top: solid 5px #D0021B;
-  border-bottom: solid 1px rgba(1, 27, 140, 0.2);
-  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: solid 5px #0c217f;
+  border-bottom: solid 1px #ffffff;
+  box-sizing: content-box;
   color: rgba(1, 27, 140, 0.9);
 }
 .t-wrapper {
@@ -80,20 +106,7 @@ section#main-menu {
 .main-menu .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: rgba(208, 2, 27, 0.9);
-  color: #fff;
-}
-.title-bars {
-  background-color: rgba(208, 2, 27, 0.9);
-  /*height: 48px;*/
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: left;
+  background-color: #0a59c1;
   color: #fff;
 }
 .blue-bg {
@@ -177,4 +190,36 @@ form.ninja-forms-form select.form-control {
 }
 form.ninja-forms-form select.form-control {
   padding-top: 40px;
+}
+core-icon.svg-icon {
+  fill: rgba(1, 27, 140, 0.2) !important;
+  width: 80px;
+  height: 80px;
+}
+core-icon.ftr {
+  width: 36px;
+  height: 36px;
+}
+#top-link a {
+  color: #d0021b;
+}
+.layout {
+  display: -webkit-flex;
+  display: flex;
+}
+header .layout {
+  /* sets the height of the header flex box */
+  height: 250px;
+}
+.home header .layout {
+  height: 450px;
+}
+.layout.center.all {
+  -webkit-flex-direction: row ;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }

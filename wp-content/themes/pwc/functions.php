@@ -211,22 +211,33 @@ $press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_ty
 //load the 2 default widgets
 $press_widget = MpLoader\Utilities\Widget::factory();
 $press_widget->default_widget();
+$press_widget->add_widget('footer 1', 'footer-1', 'Add footer 1');
+$press_widget->add_widget('footer 2', 'footer-2', 'Add footer 2');
+$press_widget->add_widget('footer 3', 'footer-3', 'Add footer 3');
 $press_widget->add_widget('footer links', 'footer-links', 'Add links for the footer');
 $press_widget->add_widget('contact us', 'contact-us', 'Contact information');
-//$press_widget->
+$press_widget->add_widget('feature', 'feature', 'Feature Widget');
+$press_widget->add_widget('cover', 'cover', 'Cover Page');
+$press_widget->add_widget('pitch', 'pitch', 'Elevator pitch');
+
 
 
 endif ;
 
-//* Do NOT include the opening php tag
+    /**
+     * adds all post functions
+     */
+    add_theme_support('post-formats', array('aside', 'gallery', 'video', 'link', 'image', 'quote', 'status'));
+
+    add_theme_support('post-thumbnails');
  
 //* Replace WordPress login logo with your own
-add_action('login_head', 'pwc_custom_login_logo');
-function pwc_custom_login_logo() {
-   
-     echo '<style type="text/css">
-        h1 a { background-image:url('. get_bloginfo( 'template_directory' ) .'/images/pwc-web-logo.png) !important; }
-    </style>';
-    
-    
-}
+//add_action('login_head', 'pwc_custom_login_logo');
+//function pwc_custom_login_logo() {
+//   
+//     echo '<style type="text/css">
+//        h1 a { background-image:url('. get_bloginfo( 'template_directory' ) .'/images/pwc-web-logo.png) !important; }
+//    </style>';
+//    
+//    
+//}

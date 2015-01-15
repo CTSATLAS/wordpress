@@ -18,6 +18,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-      
+    "pwc": "git@bitbucket.org:shawnsandy/mission.git"
   }
 }

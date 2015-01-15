@@ -1,5 +1,5 @@
 /*
-Theme Name: Panwar
+Theme Name: Mission
 Theme URI: http://
 Author: Shawn Sandy
 Author URI: http://
@@ -8,25 +8,47 @@ Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
-Text Domain: panwar
+Text Domain: mission
 */
-
 @import "package/lesshat/build/lesshat-prefixed";
 
+@header-height: 250px;
+@cover-header-height: 450px;
+@cover-bg-color: rgba(10, 89, 193, 1);
 
 #page {
   //background-color: #fff;
+  &.no-nav {
+    padding-top: 0;
+
+  }
 }
 
+.home #page > header, #cover > header, .home .t-wrapper {
+  //  background-image: url("images/bg.JPG");
+  height: 500px;
+  background-position: center center;
+}
+
+#page > header, #cover > header, .t-wrapper {
+
+  color: #fff;
+  h1 {
+    color: #fff0f0;
+  }
+  background-image: none;
+  // background-image: url("images/sky-bg.jpg");
+  //  height: 550px;
+  background-color: @cover-bg-color;
+}
 
 .navbar-brand,
 .navbar-nav li a,
 .navbar-brand,
 .bar li a,
-nav .bar li a
-{
-  line-height: 120px;
-  height: 120px;
+nav .bar li a {
+  line-height: 115px;
+  height: 115px;
   padding-top: 0;
 }
 
@@ -45,7 +67,7 @@ aside {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Crete Round', serif;
+
   margin-top: 0;
   padding-top: 0;
 }
@@ -53,7 +75,8 @@ h1, h2, h3, h4 {
 #mission {
 
   p.lead {
-    color: rgba(1, 27, 140, 0.6);
+    //    color: rgba(46, 97, 162, 1);
+    font-size: 18px;
   }
 
 }
@@ -63,29 +86,36 @@ h1, h2, h3, h4 {
   article {
     padding-top: 30px;
   }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 1px @cover-bg-color;
 
 }
+
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
-  background-color: rgba(255, 255, 255, 0.99);
-  /*background-color: rgba(208, 2, 27, 0.98);*/
-  border-top: solid 5px #D0021B;
-  border-bottom: solid 1px rgba(1, 27, 140, 0.2);
-  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  //  background-color: rgba(12, 33, 127, 1);
+  border-top: solid 5px rgba(12, 33, 127, 1);
+  border-bottom: solid 1px rgba(255, 255, 255, 1);
+  box-sizing: content-box;
   color: rgba(1, 27, 140, 0.9);
 }
+
 .t-wrapper {
   position: relative;
   background-image: none !important;
   background-color: transparent;
 
 }
+
 section#main-menu {
   padding-top: 0;
-  border-bottom: solid 1px  rgba(1, 27, 140, 0.2);;
+  border-bottom: solid 1px rgba(1, 27, 140, 0.2);;
 }
+
 .main-menu .navbar {
-//   background-color: transparent;
+  //   background-color: transparent;
   min-height: 60px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -96,29 +126,15 @@ section#main-menu {
 .main-menu .navbar-nav li a,
 .main-menu .navbar-brand,
 .main-menu .bar li a,
-.main-menu nav .bar li a
-{
+.main-menu nav .bar li a {
   line-height: 60px;
   height: 60px;
   padding-top: 0;
 }
+
 .main-menu .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
-  background-color: rgba(208, 2, 27, 0.9);
-  color: #fff;
-}
-.title-bars {
-
-  background-color: rgba(208, 2, 27, 0.9);
-  /*height: 48px;*/
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: left;
+  background-color: @cover-bg-color;
   color: #fff;
 }
 
@@ -168,7 +184,6 @@ main {
   padding-bottom: 60px;
 }
 
-
 footer {
   background-color: rgba(1, 27, 140, 0.8);
   color: #fff;
@@ -202,7 +217,7 @@ footer {
 
 }
 
-section#mission{
+section#mission {
   //border-bottom: dotted 1px rgba(1, 27, 140, 0.3);
   padding-bottom: 40px;
 }
@@ -222,15 +237,60 @@ footer p, footer h1 {
   line-height: 40px;
 }
 
-form.ninja-forms-form select.form-control{
+form.ninja-forms-form select.form-control {
   height: 30px;
   line-height: 30px;
 
 }
 
-form.ninja-forms-form select.form-control{
+form.ninja-forms-form select.form-control {
   padding-top: 40px;
 }
 
+core-icon.svg-icon {
+  fill: rgba(1, 27, 140, 0.2) !important;
+  width: 80px;
+  height: 80px;
+
+}
+
+core-icon.ftr {
+  width: 36px;
+  height: 36px;
+}
+
+#top-link a {
+  color: rgba(208, 2, 27, 1);
+}
+
+.layout {
+
+  header & {
+
+    /* sets the height of the header flex box */
+
+    height: @header-height;
+
+    .home & {
+      height: @cover-header-height;
+    }
+  }
+
+  display: -webkit-flex;
+  display: flex;
+  &.center {
+    &.all {
+
+      -webkit-flex-direction: row ;
+      /* works with row or column */
+      flex-direction: row;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+
+    }
+  }
+}
 
 
