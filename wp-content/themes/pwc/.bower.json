@@ -1,10 +1,42 @@
 {
   "name": "pwc",
-  "_release": "34d5eb3d0c",
+  "description": "Panwar Wordpress Theme",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "theme",
+    "wordpress"
+  ],
+  "authors": [
+    "shawnsandy04@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lesshat": "~3.0.2"
+  },
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1",
+    "core-icon": "Polymer/core-icon#~0.5.1",
+    "core-icons": "Polymer/core-icons#~0.5.1",
+    "core-iconset": "Polymer/core-iconset#~0.5.2",
+    "core-iconset-svg": "Polymer/core-iconset-svg#~0.5.2"
+  },
+  "_release": "a6ac52e328",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "34d5eb3d0ca6986f41d5aacd52b8a7fcdfd2561d"
+    "commit": "a6ac52e328e8a9bf0cc46cbe33ffeaf9f192ff11"
   },
   "_source": "git@bitbucket.org:shawnsandy/mission.git",
   "_target": "*",
