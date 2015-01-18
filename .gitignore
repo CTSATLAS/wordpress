@@ -2,3 +2,5 @@
 /.htaccess
 /nbproject/private/
 nbproject
+/.idea
+wp-content/themes/bk
