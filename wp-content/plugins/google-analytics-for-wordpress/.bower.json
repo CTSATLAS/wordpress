@@ -1,0 +1,14 @@
+{
+  "name": "google-analytics-for-wordpress",
+  "homepage": "https://github.com/Yoast/google-analytics-for-wordpress",
+  "version": "5.2.7",
+  "_release": "5.2.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "5.2.7",
+    "commit": "beeaf74d77bbc7823d7b17208a85d10e71cbe462"
+  },
+  "_source": "git://github.com/Yoast/google-analytics-for-wordpress.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/Yoast/google-analytics-for-wordpress"
+}
