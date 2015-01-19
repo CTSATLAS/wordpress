@@ -216,13 +216,13 @@ if (class_exists("mp_autoload")):
     $press_widget->add_widget('contact us', 'contact-us', 'Contact information');
     $press_widget->add_widget('feature', 'feature', 'Feature Widget');
     $press_widget->add_widget('cover', 'cover', 'Cover Page');
-    $press_widget->add_widget('pitch', 'pitch', 'Elevator pitch');
+    $press_widget->add_widget('pitch', 'pitch', 'Elevator pitch');   
+    
     //conditional theme widgets
-    if($mission_theme_offline):
-        $press_widget->add_widget('offline', 'offline', 'Offline Cover');
-    $press_widget->add_widget('offline_message', 'offline_message', 'Offline Message');
+    
+    $press_widget->add_widget('offline', 'offline', 'Offline Cover');
+    $press_widget->add_widget('offline message', 'offline_message', 'Offline Message');
 
-    endif;
     
 endif;
 

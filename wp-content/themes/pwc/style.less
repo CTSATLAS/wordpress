@@ -66,10 +66,20 @@ aside {
   margin-bottom: 20px;
 }
 
+
 h1, h2, h3, h4 {
 
   margin-top: 0;
   padding-top: 0;
+
+  a{
+    &:link, &:active, &:visited {
+      color : rgba(125, 125, 125, 1);
+    }
+    &:hover {
+      color: darken( rgba(125, 125, 125, 1), 10%  );
+    }
+  }
 }
 
 #mission {
@@ -259,7 +269,7 @@ core-icon.ftr {
 }
 
 #top-link a {
-  color: rgba(208, 2, 27, 1);
+  color: darken( rgba(1, 27, 140, 0.2) , 10% );
 }
 
 .layout {

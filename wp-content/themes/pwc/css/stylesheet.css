@@ -20,7 +20,7 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 #page {
-    color: #404040;
+    color: rgba(125, 125, 125, 1);
     padding-top: 120px;
     /*max-width: 1800px;*/
     margin-left: auto;
@@ -34,8 +34,9 @@ h4,
 h5 {
     font-family: 'OpenSansSemibold';
     line-height: 1.5;
-    color: rgba(1, 27, 140, 0.9);
+    /*color: rgba(1, 27, 140, 0.9);*/
     font-weight: normal !important;
+
 }
 .sidebar h1,
 .sidebar h2,

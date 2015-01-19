@@ -58,6 +58,26 @@ h4 {
   margin-top: 0;
   padding-top: 0;
 }
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited {
+  color: #7d7d7d;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+  color: #636363;
+}
 #mission p.lead {
   font-size: 18px;
 }
@@ -198,7 +218,7 @@ core-icon.ftr {
   height: 36px;
 }
 #top-link a {
-  color: #d0021b;
+  color: rgba(1, 17, 89, 0.2);
 }
 .layout {
   display: -webkit-flex;
