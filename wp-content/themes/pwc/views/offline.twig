@@ -1,0 +1,54 @@
+{% extends base_twig %}
+{% block header %}
+    <header>
+        <div class="container">
+            <div class="row">                            
+
+                <div class="layout center all">
+                    <div>
+                        <h1 class="subtitles">{{site.title}}</h1>
+                        <p class="lead">{{site.description}}</p>   
+
+                        {% if sidebar.offline %}
+                            {{ sidebar.offline }}  
+                        {% endif %} 
+                    </div> 
+                </div>
+
+            </div>  
+        </div>
+    </header>
+{% endblock header %}
+{% block main_menu %}{% endblock %} 
+{% block features %}{% endblock %} 
+{% block mission %}{% endblock %} 
+{% block articles %}{% endblock %} 
+{% block content %}
+    {% block main %}
+        <div class="container">
+            <div class="content-wrapper">                
+                {% if sidebar.offline_message %}
+                    {{ sidebar.offline_message }}
+                {% else %}
+                    <article class="post-offline">
+                        <h1>We are currently offline</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>   
+                {% endif %}  
+            </div>    
+        </div>
+    {% endblock main %}
+    <!-- /content-wrapper -->
+{% endblock %}
+{% block footer %}
+    <footer>
+        {% block footer_line %}
+            {{ parent() }}
+        {% endblock %}  
+        {% block scripts %}
+            {{ parent() }}
+        {% endblock %}    
+    </footer>   
+{% endblock %}

@@ -6,45 +6,57 @@
  * @package BJ
  * @since BJ 1.0
  */
-
 /** just icase we need a config file; */
 if ($bj_config = locate_template('config.php')) {
-	include_once $bj_config;
+    include_once $bj_config;
 }
 
 // solution for possible missing PHP constants, for WP 3.0 and higher only
 // http://codex.wordpress.org/Determining_Plugin_and_Content_Directories
 
-if (!defined('WP_CONTENT_URL')) {define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
+if (!defined('WP_CONTENT_URL')) {
+    define('WP_CONTENT_URL', get_option('siteurl') . '/wp-content');
 }
 
-if (!defined('WP_CONTENT_DIR')) {define('WP_CONTENT_DIR', ABSPATH.'wp-content');
+if (!defined('WP_CONTENT_DIR')) {
+    define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
 }
 
-if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL', WP_CONTENT_URL.'/plugins');
+if (!defined('WP_PLUGIN_URL')) {
+    define('WP_PLUGIN_URL', WP_CONTENT_URL . '/plugins');
 }
 
-if (!defined('WP_PLUGIN_DIR')) {define('WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins');
+if (!defined('WP_PLUGIN_DIR')) {
+    define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins');
 }
 
-if (!defined('WPMU_PLUGIN_URL')) {define('WPMU_PLUGIN_URL', WP_CONTENT_URL.'/mu-plugins');
+if (!defined('WPMU_PLUGIN_URL')) {
+    define('WPMU_PLUGIN_URL', WP_CONTENT_URL . '/mu-plugins');
 }
 
-if (!defined('WPMU_PLUGIN_DIR')) {define('WPMU_PLUGIN_DIR', WP_CONTENT_DIR.'/mu-plugins');
+if (!defined('WPMU_PLUGIN_DIR')) {
+    define('WPMU_PLUGIN_DIR', WP_CONTENT_DIR . '/mu-plugins');
 }
+
+/**
+ * Check if site is online
+ */
+$mission_theme_offline = get_theme_mod('site_offline', false);
+
+
 
 /**
  * ******************************plugin activations*****************************
  */
-if (file_exists(get_template_directory().'/plugins/theme-plugins.php')) {
-	include_once get_template_directory().'/plugins/theme-plugins.php';
+if (file_exists(get_template_directory() . '/plugins/theme-plugins.php')) {
+    include_once get_template_directory() . '/plugins/theme-plugins.php';
 }
 
 /* * **************************************************************************** */
 
 function install_guide($templates) {
-	$tpl = get_template_directory().'/install-guide.php';
-	load_template($tpl);
+    $tpl = get_template_directory() . '/install-guide.php';
+    load_template($tpl);
 }
 
 // if (!class_exists('cwp') OR !class_exists('al_manager') OR !$wp_version > 3.4):
@@ -61,30 +73,26 @@ function install_guide($templates) {
 // if (defined('CWP_PATH') and file_exists(CWP_PATH.'/csf_functions.php')) {
 // 	include_once CWP_PATH.'/csf_functions.php';
 // }
-
 // endif;
 
 /**
  * ***************THEME OPTIONS *************************************************
  */
-
-if (file_exists(get_template_directory().'/presskit-functions.php')):
-include_once get_template_directory().'/presskit-functions.php';
+if (file_exists(get_template_directory() . '/presskit-functions.php')):
+    include_once get_template_directory() . '/presskit-functions.php';
 endif;
 
 /**
  * Timber functions
  */
-
-if (file_exists(get_template_directory().'/timber-functions.php')):
-include_once get_template_directory().'/timber-functions.php';
+if (file_exists(get_template_directory() . '/timber-functions.php')):
+    include_once get_template_directory() . '/timber-functions.php';
 endif;
 
 /**
  * ******************************************************************************
  * custom functions create this file and add your own custom functions
  */
-
 /**
  * ******************************************************************************
  */
@@ -99,63 +107,62 @@ endif;
 /**
  * ******************************************************************************
  */
-
 if (!function_exists('bj_setup')):
 
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which runs
- * before the init hook. The init hook is too late for some features, such as indicating
- * support post thumbnails.
- *
- * @since BJ 1.0
- */
-function bj_setup() {
+    /**
+     * Sets up theme defaults and registers support for various WordPress features.
+     *
+     * Note that this function is hooked into the after_setup_theme hook, which runs
+     * before the init hook. The init hook is too late for some features, such as indicating
+     * support post thumbnails.
+     *
+     * @since BJ 1.0
+     */
+    function bj_setup() {
 
-	/**
-	 * Custom template tags for this theme.
-	 */
-	//require (get_template_directory().'/inc/template-tags.php');
+        /**
+         * Custom template tags for this theme.
+         */
+        //require (get_template_directory().'/inc/template-tags.php');
 
-	/**
-	 * Custom functions that act independently of the theme templates
-	 */
-	//require( get_template_directory() . '/inc/tweaks.php' );
+        /**
+         * Custom functions that act independently of the theme templates
+         */
+        //require( get_template_directory() . '/inc/tweaks.php' );
 
-	/**
-	 * Custom Theme Options
-	 */
-	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
+        /**
+         * Custom Theme Options
+         */
+        //require( get_template_directory() . '/inc/theme-options/theme-options.php' );
 
-	/**
-	 * Make theme available for translation
-	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on BJ, use a find and replace
-	 * to change 'bj' to the name of your theme in all the template files
-	 */
-	//load_theme_textdomain('bj', get_template_directory().'/languages');
-}
+        /**
+         * Make theme available for translation
+         * Translations can be filed in the /languages/ directory
+         * If you're building a theme based on BJ, use a find and replace
+         * to change 'bj' to the name of your theme in all the template files
+         */
+        //load_theme_textdomain('bj', get_template_directory().'/languages');
+    }
 
-endif;// bj_setup
+endif; // bj_setup
 add_action('after_setup_theme', 'bj_setup');
 
 /**
  * Enqueue scripts and styles
  */
 function bj_scripts() {
-	global $post;
+    global $post;
 
-	//wp_enqueue_style( 'style', get_stylesheet_uri() );
-	//wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
+    //wp_enqueue_style( 'style', get_stylesheet_uri() );
+    //wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
-	if (is_singular() && comments_open() && get_option('thread_comments')) {
-		wp_enqueue_script('comment-reply');
-	}
+    if (is_singular() && comments_open() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+    }
 
-	if (is_singular() && wp_attachment_is_image($post->ID)) {
-		wp_enqueue_script('keyboard-image-navigation', get_template_directory_uri().'/js/keyboard-image-navigation.js', array('jquery'), '20120202');
-	}
+    if (is_singular() && wp_attachment_is_image($post->ID)) {
+        wp_enqueue_script('keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array('jquery'), '20120202');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'bj_scripts');
@@ -172,15 +179,12 @@ add_action('wp_enqueue_scripts', 'bj_scripts');
 // // 'application/json; charset=utf8'
 // echo $res->getBody();// {"type":"User"...'
 // var_export($res->json());
-
 // $foo = new MpLoader\foo();
-
 // $mobile = new Mobile_Detect();
 // if (!$mobile->isMobile()) {
 // 	echo "<h1>Mobile detected</h1>";
 // 	;
 // }
-
 //$foo->print_it();
 
 
@@ -188,49 +192,47 @@ add_action('wp_enqueue_scripts', 'bj_scripts');
  * check for wp-autoload
  * load the functions
  */
-if(class_exists("mp_autoload")):
+if (class_exists("mp_autoload")):
 
-
-
-
-/**
- * Theme customizer defaults
- */
-
-$cutomizer = MpLoader\Customizer\Setup::factory();
-
-
-
-//$amenu = MpLoader\Admin\Menu::factory();
-$press_adminbar = MpLoader\Admin\PostMenus::factory()->create_nodes();
-
-//create a custom post 
-$press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_type('Indie Shop');
-
-
-//load the 2 default widgets
-$press_widget = MpLoader\Utilities\Widget::factory();
-$press_widget->default_widget();
-$press_widget->add_widget('footer 1', 'footer-1', 'Add footer 1');
-$press_widget->add_widget('footer 2', 'footer-2', 'Add footer 2');
-$press_widget->add_widget('footer 3', 'footer-3', 'Add footer 3');
-$press_widget->add_widget('footer links', 'footer-links', 'Add links for the footer');
-$press_widget->add_widget('contact us', 'contact-us', 'Contact information');
-$press_widget->add_widget('feature', 'feature', 'Feature Widget');
-$press_widget->add_widget('cover', 'cover', 'Cover Page');
-$press_widget->add_widget('pitch', 'pitch', 'Elevator pitch');
-
-
-
-endif ;
 
     /**
-     * adds all post functions
+     * Include Theme customizer defaults
      */
-    add_theme_support('post-formats', array('aside', 'gallery', 'video', 'link', 'image', 'quote', 'status'));
+    include_once get_template_directory() . '/inc/mission-theme-settings.php';
 
-    add_theme_support('post-thumbnails');
- 
+//$amenu = MpLoader\Admin\Menu::factory();
+    $press_adminbar = MpLoader\Admin\PostMenus::factory()->create_nodes();
+
+//create a custom post 
+    $press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_type('Indie Shop');
+
+//load the 2 default widgets
+    $press_widget = MpLoader\Utilities\Widget::factory();
+    $press_widget->default_widget();
+    $press_widget->add_widget('footer 1', 'footer-1', 'Add footer 1');
+    $press_widget->add_widget('footer 2', 'footer-2', 'Add footer 2');
+    $press_widget->add_widget('footer 3', 'footer-3', 'Add footer 3');
+    $press_widget->add_widget('footer links', 'footer-links', 'Add links for the footer');
+    $press_widget->add_widget('contact us', 'contact-us', 'Contact information');
+    $press_widget->add_widget('feature', 'feature', 'Feature Widget');
+    $press_widget->add_widget('cover', 'cover', 'Cover Page');
+    $press_widget->add_widget('pitch', 'pitch', 'Elevator pitch');
+    //conditional theme widgets
+    if($mission_theme_offline):
+        $press_widget->add_widget('offline', 'offline', 'Offline Cover');
+    $press_widget->add_widget('offline_message', 'offline_message', 'Offline Message');
+
+    endif;
+    
+endif;
+
+/**
+ * adds all post functions
+ */
+add_theme_support('post-formats', array('aside', 'gallery', 'video', 'link', 'image', 'quote', 'status'));
+
+add_theme_support('post-thumbnails');
+
 //* Replace WordPress login logo with your own
 //add_action('login_head', 'pwc_custom_login_logo');
 //function pwc_custom_login_logo() {
@@ -241,3 +243,29 @@ endif ;
 //    
 //    
 //}
+
+
+if ($mission_theme_offline == true && !is_admin() && !current_user_can('manage_options')) {
+
+    add_action('template_include', 'mission_site_offline');
+    add_filter('body_class', 'mission_offline_class');
+}
+
+// Add specific CSS class by filter
+
+function mission_offline_class($classes) {
+    // add 'class-name' to the $classes array
+    $classes[] = 'site offline';
+    // return the $classes array
+    return $classes;
+}
+
+function mission_site_offline() {
+    $tpl = get_template_directory() . '/site-offline.php';
+    load_template($tpl);
+}
+
+/**
+ * Titain Framework
+ */
+include_once get_template_directory() . '/inc/titan-framework.php';
