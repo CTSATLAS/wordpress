@@ -22,7 +22,7 @@ body {
 #page {
     color: #404040;
     padding-top: 120px;
-    max-width: 1800;
+    /*max-width: 1800px;*/
     margin-left: auto;
     margin-right: auto;
 
@@ -77,15 +77,10 @@ figure {
 }
 /* ---- header ---- */
 
-#page > header, .t-wrapper {
+#page > header{
     height: 250px;
     min-height: 250px;
     text-align: center;
-
-    background-image: url("flag-medal-and-cap.jpg");
-    background-color: RGBA(1, 27, 140, 1);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
     color: #808080;
     padding-top: 0;
@@ -122,7 +117,7 @@ header .vtable .table-cell {
 
 footer .footer .copy-info {
     padding: 20px;
-    font-size: 1.4;
+    font-size: 1.4rem;
 }
 footer .footer .copy-info .social i {
     font-size: 16px;
@@ -131,7 +126,7 @@ footer .footer .copy-info p {
     font-size: 14px;
     font-size: 1.4rem;
 }
-footer .footer .social i {
+footer .social i {
     font-size: 32px;
 }
 /* --- content --- */
@@ -300,7 +295,7 @@ footer h1 {
     background-color: RGBA(249, 249, 249, 0.5);
     padding: 5px;
 }
-#respond {} #reply-title {} #cancel-comment-reply-link {} #commentform {} #author {} #email {} #url {} #comment #submit .comment-notes {} .required {} .comment-form-author {} .comment-form-email {} .comment-form-url {} .comment-form-comment {} .form-allowed-tags {} .form-submit {};
+#respond {} #reply-title {} #cancel-comment-reply-link {} #commentform {} #author {} #email {} #url {} #comment #submit .comment-notes {} .required {} .comment-form-author {} .comment-form-email {} .comment-form-url {} .comment-form-comment {} .form-allowed-tags {} .form-submit {}
  .blog-comment {
     margin-top: 50px;
     padding-top: 40px;

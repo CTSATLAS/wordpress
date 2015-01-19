@@ -42,7 +42,7 @@ function add_to_context($data) {
 	$data['parent_theme_url']    = get_template_directory_uri();
 	$data['is_logged_in'] = is_user_logged_in();
 	$data['theme_mod']    = get_theme_mods();
-	$data['options']      = wp_load_alloptions();
+	//$data['options']      = wp_load_alloptions();
 	$data['site_url']     = site_url();
 	$data['is_home']      = is_home();
 
@@ -73,6 +73,8 @@ function add_to_context($data) {
 	$sidebars['features'] = Timber::get_widgets('feature');
 	$sidebars['cover'] = Timber::get_widgets('cover');
 	$sidebars['pitch'] = Timber::get_widgets('pitch');
+	$sidebars['offline'] = Timber::get_widgets('offline');
+	$sidebars['offline_message'] = Timber::get_widgets('offline_mesasge');
 
 	
         
@@ -110,8 +112,26 @@ function add_to_context($data) {
 	$mobile['ipad']      = $mobile_press->isiPad();
 	$data['mobile']      = $mobile;
 	// endif;
+        
+        /**
+         * get them options
+         * title_tagline - Site Title & Tagline
+colors - Colors
+header_image - Header Image
+background_image - Background Image
+nav - Navigation
+static_front_page - Static Front Page
+         */
+        
+        $option['title_tagline']  = get_theme_mod('site_offline', 'A Simple Wordpress them toolkit');
+        $option['theme_logo']  = '';
+        $option['']  = '';
+        $option['background']  = '';
+        $data['option'] = $option;
 
 	return $data;
+        
+        
 
 }
 
