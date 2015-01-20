@@ -11,7 +11,6 @@
  */
 
 $cutomizer = MpLoader\Customizer\Setup::factory();
-
 $settings = MpLoader\Customizer\Settings::add_section('bj_settings', 'Settings', 'Theme settings',5);
 $mission_settings = MpLoader\Customizer\Settings::factory();
 $mission_settings::add_option($settings, 'site_offline', 'Put Site Offline')->set_control_type('checkbox')->customizer();
