@@ -15,6 +15,6 @@
     "commit": "fabcd6967770984f460930ec1059b950b4126828"
   },
   "_source": "git://github.com/Polymer/core-iconset.git",
-  "_target": "~0.5.2",
+  "_target": "~0.5.1",
   "_originalSource": "Polymer/core-iconset"
 }

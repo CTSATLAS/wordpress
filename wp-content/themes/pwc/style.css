@@ -18,18 +18,13 @@ Text Domain: mission
 .home .t-wrapper {
   height: 500px;
   background-position: center center;
+  background-color: #e6e6e6;
 }
 #page > header,
 #cover > header,
 .t-wrapper {
-  color: #fff;
+  color: #7d7d7d;
   background-image: none;
-  background-color: #0a59c1;
-}
-#page > header h1,
-#cover > header h1,
-.t-wrapper h1 {
-  color: #fff0f0;
 }
 .navbar-brand,
 .navbar-nav li a,
@@ -58,6 +53,26 @@ h4 {
   margin-top: 0;
   padding-top: 0;
 }
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited {
+  color: #7d7d7d;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+  color: #636363;
+}
 #mission p.lead {
   font-size: 18px;
 }
@@ -71,10 +86,9 @@ h4 {
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
   background-color: rgba(255, 255, 255, 0.95);
-  border-top: solid 5px #0c217f;
+  border-top: solid 5px #292929;
   border-bottom: solid 1px #ffffff;
   box-sizing: content-box;
-  color: rgba(1, 27, 140, 0.9);
 }
 .t-wrapper {
   position: relative;
@@ -103,7 +117,7 @@ section#main-menu {
 .main-menu .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #0a59c1;
+  background-color: #5c5c5c;
   color: #fff;
 }
 .blue-bg {
@@ -142,8 +156,8 @@ main {
   padding-bottom: 60px;
 }
 footer {
-  background-color: #0a59c1;
-  color: #fff;
+  background-color: #e6e6e6;
+  color: #7d7d7d;
 }
 footer .info {
   padding-bottom: 60px;
@@ -167,12 +181,11 @@ footer p {
   font-size: 15px;
   font-size: 1.5rem;
 }
+footer footer h1 {
+  color: #fff;
+}
 section#mission {
   padding-bottom: 40px;
-}
-footer p,
-footer h1 {
-  color: #fff;
 }
 .fonts.crete {
   font-family: 'Crete Round', serif;
@@ -198,7 +211,7 @@ core-icon.ftr {
   height: 36px;
 }
 #top-link a {
-  color: #d0021b;
+  color: rgba(1, 17, 89, 0.2);
 }
 .layout {
   display: -webkit-flex;
