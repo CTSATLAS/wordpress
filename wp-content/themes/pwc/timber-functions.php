@@ -32,7 +32,7 @@ function add_to_context($data) {
 	//default twig file
 	$twig_base = 'base.twig';
 	//theme twig replace base twig as default template
-	if (file_exists(trailingslashit(get_template_directory()).'/views/theme.twig')) {
+	if (file_exists(trailingslashit(get_stylesheet_directory()).'/views/theme.twig')) {
 		$twig_base = 'theme.twig';
 	}
 
