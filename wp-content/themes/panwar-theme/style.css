@@ -11,6 +11,10 @@ Tags:
 Template: pwc
 Text Domain: panwar
 */
+#page > header,
+.t-wrapper {
+  background-image: url("images/SesOats2.jpg");
+}
 .navbar-brand,
 .navbar-nav li a,
 .navbar-brand,
@@ -86,7 +90,7 @@ section#main-menu {
   color: #fff;
 }
 .title-bars {
-  background-color: rgba(208, 2, 27, 0.9);
+  background-color: rgba(1, 27, 140, 0.9);
   /*height: 48px;*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
