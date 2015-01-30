@@ -183,13 +183,9 @@
                     </div>
                 </section>
             {% endblock %}
-            <section id="pinwheel">
-                <div class="container text-center">
-                    <img src="{{theme_url}}/images/pinwheel.png" />
-                   
-                    
-                </div>
-            </section>
+            {% block pinwheel %}
+           
+            {%  endblock %}
             {% block features %}
                 <section id="features">
 

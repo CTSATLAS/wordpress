@@ -171,6 +171,10 @@ footer p,
 footer h1 {
   color: #fff;
 }
+footer a:link,
+footer a:visited {
+  color: #fff;
+}
 .fonts.crete {
   font-family: 'Crete Round', serif;
 }
