@@ -25,7 +25,7 @@ Template Name: Home Page Theme
 	$data['menu'] = new TimberMenu();
 	$timber_posts = Timber::get_posts('TimberPost');
 	$data['posts'] = $timber_posts;
-	$templates = array('index.twig');
+	$templates = array('home.twig');
 //	if (is_home()){
 //		array_unshift($templates, 'home.twig');
 //	}
