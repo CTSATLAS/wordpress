@@ -23,7 +23,8 @@ Template Name: Home Page Theme
 
 	$data = Timber::get_context();
 	$data['menu'] = new TimberMenu();
-	$timber_posts = Timber::get_posts('TimberPost');
+	$home_query = array('posts_per_page' => 3);
+	$timber_posts = Timber::get_posts($home_query);
 	$data['posts'] = $timber_posts;
 	$templates = array('home.twig');
 //	if (is_home()){
