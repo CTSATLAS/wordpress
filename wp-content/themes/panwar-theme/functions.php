@@ -13,6 +13,5 @@ function pwc_custom_login_logo() {
      echo '<style type="text/css">
         h1 a { background-image:url('. get_bloginfo( 'stylesheet_directory' ) .'/images/pwc-web-logo.png) !important; }
     </style>';
-    
-    
+        
 }
