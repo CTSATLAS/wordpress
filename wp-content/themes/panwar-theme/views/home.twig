@@ -1,9 +1,26 @@
 {% extends base_twig %} 
 {% block pinwheel %}
     <section id="pinwheel">
-        <h1>home page</h1>
-        <div class="container text-center">
-            <img src="{{theme_url}}/images/pinwheel.png" />                 
+       
+        <div class="container">
+            
+           <div class="row">
+               <div class="col-md-8">
+                  <img src="{{theme_url}}/images/pinwheel.png" />   
+               </div>
+               <div class="col-md-4">
+                   <aside>
+                       <h1 class="large">Pinwheel</h1>
+                      
+                       <p class="lead">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                           laboris nisi ut aliquip ex ea commodo consequat.  
+                       </p>
+                   </aside>
+               </div>
+           </div>
+         
         </div>
+       
     </section>
 {%  endblock %}
