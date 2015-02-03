@@ -1,26 +1,48 @@
 {% extends base_twig %} 
+{% block mission %}
+    {{ parent() }}
+    <section id="action">
+        <div class="container">
+            <div class="row">
+              
+                <div class="text-center fonts crete">
+                    <p class="large">
+                        
+                        BE KNOWN and take the Warrior Survey. Let us know how we can put our resources to work for your benefit.
+                    </p>
+                   
+                 
+                   <p>  <button class="btn btn-lg btn-primary lead">
+                           <span class="lead">
+                               Take the survey now
+                           </span> 
+                    </button>   </p> 
+                    
+                </div>
+            </div>
+        </div>
+    </section>    
+{% endblock  %}    
 {% block pinwheel %}
     <section id="pinwheel">
-       
+
         <div class="container">
-            
-           <div class="row">
-               <div class="col-md-8">
-                  <img src="{{theme_url}}/images/pinwheel.png" />   
-               </div>
-               <div class="col-md-4">
-                   <aside>
-                       <h1 class="large">Pinwheel</h1>
-                      
-                       <p class="lead">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                           laboris nisi ut aliquip ex ea commodo consequat.  
-                       </p>
-                   </aside>
-               </div>
-           </div>
-         
+
+            <div class="row layout center all">
+                <div class="col-md-6 text-center">
+                    <img src="{{theme_url}}/images/pinwheel-res.png" />   
+                </div>
+                <div class="col-md-6">
+                    <aside class="">
+                        <p class="lead">
+                            In partnership with America’s Warrior Partnership, we share the same belief that an improved quality of life is found in the balance of eight areas: housing, employment, strong relationships, spirituality, education, medical, recreation and benefits. Each of these areas are interdependent. We believe the warrior just needs a guide to navigate these areas of life. 
+
+                        </p>
+                    </aside>
+                </div>
+            </div>
+
         </div>
-       
+
     </section>
 {%  endblock %}

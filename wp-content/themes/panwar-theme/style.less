@@ -13,10 +13,14 @@ Text Domain: panwar
 */
 
 @import "../pwc/package/lesshat/build/lesshat-prefixed";
-
+@red: rgba(208, 2, 27, 1);
+@blue: rgba(26, 49, 151, 1);
 
 #page {
   //background-color: #fff;
+  p {
+    line-height: 1.6;
+  }
 }
 #page > header, .t-wrapper {
   background-image: url("images/SesOats2.jpg");
@@ -57,9 +61,11 @@ h1, h2, h3, h4 {
 #mission {
 
   p.lead {
-    color: rgba(1, 27, 140, 0.6);
+    //color: rgba(1, 27, 140, 0.6);
     font-size: 18px;
   }
+
+  padding-bottom: 60px;
 
 }
 
@@ -67,6 +73,13 @@ h1, h2, h3, h4 {
 
   article {
     padding-top: 30px;
+  }
+  .blue-bg {
+    border-radius: 7px;
+    height: auto !important;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: @blue;
   }
 
 }
@@ -209,8 +222,22 @@ footer {
 
 section#mission{
   //border-bottom: dotted 1px rgba(1, 27, 140, 0.3);
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   padding-top: 30px;
+  border-bottom: dotted 1px @blue;
+}
+
+section#action {
+  background-color: @red;
+  mangin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+section#pinwheel {
+  padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 footer {
@@ -265,5 +292,24 @@ core-icon.ftr {
   color: rgba(208, 2, 27, 1);
 }
 
+.layout {
+
+  display: -webkit-flex;
+  display: flex;
+  height: 100% !important;
+  &.center {
+    &.all {
+
+      -webkit-flex-direction: row ;
+      /* works with row or column */
+      flex-direction: row;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+
+    }
+  }
+}
 
 
