@@ -11,6 +11,9 @@ Tags:
 Template: pwc
 Text Domain: panwar
 */
+#page p {
+  line-height: 1.6;
+}
 #page > header,
 .t-wrapper {
   background-image: url("images/SesOats2.jpg");
@@ -43,12 +46,21 @@ h4 {
   margin-top: 0;
   padding-top: 0;
 }
+#mission {
+  padding-bottom: 60px;
+}
 #mission p.lead {
-  color: rgba(1, 27, 140, 0.6);
   font-size: 18px;
 }
 #features article {
   padding-top: 30px;
+}
+#features .blue-bg {
+  border-radius: 7px;
+  height: auto !important;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #1a3197;
 }
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
@@ -164,11 +176,27 @@ footer p {
   font-size: 1.5rem;
 }
 section#mission {
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   padding-top: 30px;
+  border-bottom: dotted 1px #1a3197;
+}
+section#action {
+  background-color: #d0021b;
+  mangin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+section#pinwheel {
+  padding-bottom: 30px;
+  padding-top: 60px;
 }
 footer p,
 footer h1 {
+  color: #fff;
+}
+footer a:link,
+footer a:visited {
   color: #fff;
 }
 .fonts.crete {
@@ -196,4 +224,18 @@ core-icon.ftr {
 }
 #top-link a {
   color: #d0021b;
+}
+.layout {
+  display: -webkit-flex;
+  display: flex;
+  height: 100% !important;
+}
+.layout.center.all {
+  -webkit-flex-direction: row ;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }

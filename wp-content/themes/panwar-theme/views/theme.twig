@@ -102,6 +102,8 @@
                     </div>
                 </header>
             {% endblock header %}
+            
+            {% block main_menu %}
             <section id="main-menu" class="main-menu">               
 
                 <nav class="navbar navbar-right-">
@@ -138,7 +140,7 @@
 
             </section>
 
-                             
+              {% endblock %}               
 
             {% block mission %}
                 <section id="mission">
@@ -183,47 +185,26 @@
                     </div>
                 </section>
             {% endblock %}
-            <section id="pinwheel">
-                <div class="container text-center">
-                    <img src="{{theme_url}}/images/pinwheel.png" />
-                   
-                    
-                </div>
-            </section>
+            {% block pinwheel %}
+           
+            {%  endblock %}
             {% block features %}
                 <section id="features">
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 blue-bg">
+                            <div class="col-md-12 blue-bg">
                                 <article>
                                     <h1 class="large">
                                         <!--<core-icon class="ftr" icon="stars"></core-icon>-->
-                                        About The Holistic Wheel</h1>
+                                        Free News Letter</h1>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta dolor dolores
-                                        ducimus eum ex
-                                        excepturi, explicabo fugiat id illo ipsam iure magni nam natus necessitatibus officiis
-                                        perferendis
-                                        porro quam quibusdam quis, quo voluptate voluptatem? Aperiam nesciunt repellendus sunt ullam
-                                        veniam!
-                                        Aliquid at cum cumque dolorum ea earum, et ex fuga illum, labore magnam modi qui rem
-                                        repellat sequi
-                                        ullam.</p>
+                                    <p>Sign Up for our free Newsletter and get latest news and updates</p>
+                                    <button class="btn btn-lg btn-success">
+                                        <span class="lead">Sign up Now</span>
+                                    </button>
                                 </article>
 
-                            </div>
-                            <div class="col-md-4 red-bg">
-                                <article class="take survey">
-                                    <h1 class="large">
-                                        <!--<i class="fa fa-check-circle"></i>--> 
-                                        Take our Survey</h1>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur et iusto nemo
-                                        provident, quidem
-                                        veniam! Amet at, beatae excepturi expedita laboriosam nostrum possimus! Quos?
-                                    </p>
-                                </article>
                             </div>
                         </div>
                     </div>

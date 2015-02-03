@@ -1,0 +1,28 @@
+.ai1ec-media,
+.ai1ec-media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.ai1ec-media,
+.ai1ec-media .ai1ec-media {
+  margin-top: 15px;
+}
+.ai1ec-media:first-child {
+  margin-top: 0;
+}
+.ai1ec-media-object {
+  display: block;
+}
+.ai1ec-media-heading {
+  margin: 0 0 5px;
+}
+.ai1ec-media > .ai1ec-pull-left {
+  margin-right: 10px;
+}
+.ai1ec-media > .ai1ec-pull-right {
+  margin-left: 10px;
+}
+.ai1ec-media-list {
+  padding-left: 0;
+  list-style: none;
+}
