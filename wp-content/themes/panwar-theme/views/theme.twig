@@ -102,45 +102,45 @@
                     </div>
                 </header>
             {% endblock header %}
-            
+
             {% block main_menu %}
-            <section id="main-menu" class="main-menu">               
+                <section id="main-menu" class="main-menu">               
 
-                <nav class="navbar navbar-right-">
-                    <div class="container">  
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button> 
-                            {#                               <a href="" class="navbar-brand">PWC</a>#}
-                        </div>
+                    <nav class="navbar navbar-right-">
+                        <div class="container">  
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button> 
+                                {#                               <a href="" class="navbar-brand">PWC</a>#}
+                            </div>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="#">Home <span class="sr-only">(current)</span></a></li>
-                                <li><a href="{{site_url}}/about-us">About</a></li>
-                                <li><a href="{{site_url}}/media">Media</a></li>
-                                <li><a href="{{site_url}}/events">Events</a></li>
-                                <li><a href="{{site_url}}/get-involved">Get Involved</a></li>
-                                <li><a href="{{site_url}}/contact-us">Contact</a></li>
-                                <li><a href="{{site_url}}/register">Register</a></li>
-                                <li><a href="{{site_url}}/resources">Resources</a></li>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active">
+                                        <a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="{{site_url}}/about-us">About</a></li>
+                                    <li><a href="{{site_url}}/media">Media</a></li>
+                                    <li><a href="{{site_url}}/events">Events</a></li>
+                                    <li><a href="{{site_url}}/get-involved">Get Involved</a></li>
+                                    <li><a href="{{site_url}}/contact-us">Contact</a></li>
+                                    <li><a href="{{site_url}}/register">Register</a></li>
+                                    <li><a href="{{site_url}}/resources">Resources</a></li>
 
-                            </ul>
+                                </ul>
 
-                        </div><!-- /.navbar-collapse -->
+                            </div><!-- /.navbar-collapse -->
 
-                    </div> 
-                </nav>
+                        </div> 
+                    </nav>
 
-            </section>
+                </section>
 
-              {% endblock %}               
+            {% endblock %}               
 
             {% block mission %}
                 <section id="mission">
@@ -186,7 +186,7 @@
                 </section>
             {% endblock %}
             {% block pinwheel %}
-           
+
             {%  endblock %}
             {% block features %}
                 <section id="features">
@@ -197,12 +197,12 @@
                                 <article>
                                     <h1 class="large">
                                         <!--<core-icon class="ftr" icon="stars"></core-icon>-->
-                                        Free News Letter</h1>
-
-                                    <p>Sign Up for our free Newsletter and get latest news and updates</p>
+                                    </h1>
                                     <button class="btn btn-lg btn-success">
-                                        <span class="lead">Sign up Now</span>
+                                        <span class="lead">Free News Warrior Connection Letter. Sign up Now</span>
                                     </button>
+                                    <p>Sign Up for our free Newsletter and get latest news and updates</p>
+
                                 </article>
 
                             </div>
@@ -323,97 +323,97 @@
             {% block footer %}
                 <footer>
 
-                        <div class="container">
+                    <div class="container">
 
 
-                            <div class="row">
-                                <div class="col-md-8 info">
-                                    <aside>
-                                        <h1>Made Possible By</h1>
+                        <div class="row">
+                            <div class="col-md-8 info">
+                                <aside>
+                                    <h1>Made Possible By</h1>
 
-                                        <p>
-                                            Panhandle Warrior Connection’s mission is to help veterans, military and their families in any way we possibly can. If you need assistance, please send us a message and we’ll do everything in our power to help. We specialize in cutting through bureaucracy and solving problems. We know the system. Let us know how we can put our resources to work for you.
+                                    <p>
+                                        Panhandle Warrior Connection’s mission is to help veterans, military and their families in any way we possibly can. If you need assistance, please send us a message and we’ll do everything in our power to help. We specialize in cutting through bureaucracy and solving problems. We know the system. Let us know how we can put our resources to work for you.
 
-                                        </p>
-                                    </aside>
+                                    </p>
+                                </aside>
 
-                                </div>
-                                <div class="col-md-2 info">
+                            </div>
+                            <div class="col-md-2 info">
 
-                                    {{ sidebars.footer_links }}
-
-                                </div>
-
-                                <div class="col-md-2 info">
-                                    <aside>
-                                        {{ sidebars.contact_us }}                        
-                                    </aside>
-                                </div>
-
+                                {{ sidebars.footer_links }}
 
                             </div>
 
-                            {% block footer_line %}
+                            <div class="col-md-2 info">
+                                <aside>
+                                    {{ sidebars.contact_us }}                        
+                                </aside>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <span class="text-center">
-                                            <ul class="social list-inline ng-scope">
-                                                <li><i class="fa fa-twitter-square"></i></li>
-                                                <li><i class="fa fa-facebook-square"></i></li>
-                                                <li><i class="fa fa-google-plus-square"></i></li>
-                                                <li><i class="fa fa-rss-square"></i></li>
-                                            </ul>
-                                        </span>
-
-                                        <div class="col-sm-12">
-                                            <p class="text-center">© SG.Kit 2013 <!-- ngInclude: e.social --></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endblock footer_line %}
 
                         </div>
-                   
+
+                        {% block footer_line %}
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <span class="text-center">
+                                        <ul class="social list-inline ng-scope">
+                                            <li><i class="fa fa-twitter-square"></i></li>
+                                            <li><i class="fa fa-facebook-square"></i></li>
+                                            <li><i class="fa fa-google-plus-square"></i></li>
+                                            <li><i class="fa fa-rss-square"></i></li>
+                                        </ul>
+                                    </span>
+
+                                    <div class="col-sm-12">
+                                        <p class="text-center">© SG.Kit 2013 <!-- ngInclude: e.social --></p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endblock footer_line %}
+
+                    </div>
+
 
                 </footer>
- </div>
-                <!--data-->
+            </div>
+            <!--data-->
 
-                <div id="top-link">
-                    <a href="#page"><i class="fa fa-chevron-circle-up"></i></a>
-                </div>
-                {% block scripts %}
-
-
-                    <!-- /container -->
-                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-                    <!-- inject:js -->
-
-                    <script src="{{ theme_url }}/js/vendor/bootstrap.min.js"></script>
-                    <!-- endinject-->
+            <div id="top-link">
+                <a href="#page"><i class="fa fa-chevron-circle-up"></i></a>
+            </div>
+            {% block scripts %}
 
 
-                    <script src="{{ theme_url }}/js/main.js"></script>
-                    <script src="{{ theme_url }}/js/angular-js/controllers.js"></script>
+                <!-- /container -->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+                <!-- inject:js -->
+
+                <script src="{{ theme_url }}/js/vendor/bootstrap.min.js"></script>
+                <!-- endinject-->
 
 
-                    <script>
-                        //    var _gaq = [
-                        //        ['_setAccount', 'UA-XXXXX-X'],
-                        //        ['_trackPageview']
-                        //    ];
-                        //    (function (d, t) {
-                        //        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                        //        g.src = '//www.google-analytics.com/ga.js';
-                        //        s.parentNode.insertBefore(g, s)
-                        //    }(document, 'script'));
-                    </script>
-                {% endblock scripts %}
-                {{ function('wp_footer') }}
+                <script src="{{ theme_url }}/js/main.js"></script>
+                <script src="{{ theme_url }}/js/angular-js/controllers.js"></script>
 
-            {% endblock footer %}
-        </div>
-    </body>
+
+                <script>
+                    //    var _gaq = [
+                    //        ['_setAccount', 'UA-XXXXX-X'],
+                    //        ['_trackPageview']
+                    //    ];
+                    //    (function (d, t) {
+                    //        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                    //        g.src = '//www.google-analytics.com/ga.js';
+                    //        s.parentNode.insertBefore(g, s)
+                    //    }(document, 'script'));
+                </script>
+            {% endblock scripts %}
+            {{ function('wp_footer') }}
+
+        {% endblock footer %}
+    </div>
+</body>
 </html>
