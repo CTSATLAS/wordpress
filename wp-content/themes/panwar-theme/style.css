@@ -59,11 +59,18 @@ h4 {
   padding-top: 30px;
 }
 #features .blue-bg {
-  border-radius: 7px;
+  border-radius: 0;
   height: auto !important;
   text-align: center;
-  padding-bottom: 40px;
-  background-color: #1a3197;
+  padding-bottom: 30px;
+  background-color: transparent;
+  border-top: dotted 1px #1a3197;
+  color: #444749;
+  border-bottom: dotted 1px #1a3197;
+}
+#features button {
+  margin-bottom: 15px;
+  columns: #fff;
 }
 .navbar {
   /*background-color: RGBA(1, 32, 131, 0.8);*/
