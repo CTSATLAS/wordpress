@@ -52,6 +52,9 @@ h4 {
 #mission p.lead {
   font-size: 18px;
 }
+#mission aside h1 {
+  margin-bottom: 20px;
+}
 #features article {
   padding-top: 30px;
 }
