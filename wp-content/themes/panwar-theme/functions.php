@@ -15,6 +15,7 @@ function pwc_custom_login_logo() {
         h1 a { background-image:url(' . get_bloginfo('stylesheet_directory') . '/images/pwc-web-logo.png) !important; }
     </style>';
 }
+@ini_set( 'upload_max_size' , '20M' );
 
 class EventsCal extends TimberPost {
 
