@@ -204,11 +204,10 @@ if (class_exists("mp_autoload")):
     $press_adminbar = MpLoader\Admin\PostMenus::factory()->create_nodes();
 
 //create a custom post 
-    $press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_type('Indie Shop');
+//    $press_sample = MpLoader\Post\CustomTypes::factory('indeshop')->register_post_type('Indie Shop');
     
 //events post
-    
-$press_events = MpLoader\Post\CustomTypes::factory('eventscal')->register_post_type('Events');
+
 
 //load the 2 default widgets
     $press_widget = MpLoader\Utilities\Widget::factory();
@@ -275,32 +274,4 @@ function mission_site_offline() {
 include_once get_template_directory() . '/inc/titan-framework.php';
 
 
-/**
- * automatic custom_type.php template names
- * @global type $post
- * @param type $template
- * @return type
- */
-function post_type_templates($template) {
-
-        /** access gobal */
-        global $post;
-
-        /** get the post type */
-        $post_type = get_post_type($post);
-
-        /** if post type archive template name is post_type */
-        if (is_post_type_archive()) {
-
-            /** check for the template else use default */
-            $located = locate_template(array($post_type.'.php'));            
-            if(!empty($located))
-                $template = get_query_template($post_type);
-
-        }
-
-        return $template;
-
-    }
-    
   //add_action('template_include', 'post_type_templates');
