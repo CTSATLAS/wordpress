@@ -65,6 +65,12 @@ h1, h2, h3, h4 {
     font-size: 18px;
   }
 
+  aside {
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
   padding-bottom: 60px;
 
 }
@@ -75,11 +81,19 @@ h1, h2, h3, h4 {
     padding-top: 30px;
   }
   .blue-bg {
-    border-radius: 7px;
+    border-radius: 0;
     height: auto !important;
     text-align: center;
-    padding-bottom: 40px;
-    background-color: @blue;
+    padding-bottom: 30px;
+    background-color: transparent;
+    border-top: dotted 1px @blue;
+    color: rgba(68, 71, 73, 1);
+    border-bottom: dotted 1px @blue;
+  }
+
+  button {
+    margin-bottom: 15px;
+    columns: #fff;
   }
 
 }
