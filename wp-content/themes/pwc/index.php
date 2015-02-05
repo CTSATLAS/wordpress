@@ -14,18 +14,17 @@
  */
 
 	if (!class_exists('Timber')){
-		echo 'Timber not activated';
+		echo 'Timber not activated. Make sure you activate the plugin in <a href="/wp-admin/plugins.php#timber">/wp-admin/plugins.php</a>';
+		return;
 	}
-
-	$data = Timber::get_context();
-	$data['menu'] = new TimberMenu();
-	$timber_posts = Timber::get_posts('TimberPost');
-	$data['posts'] = $timber_posts;
+	$context = Timber::get_context();
+	$context['posts'] = Timber::get_posts();
+	$context['foo'] = 'bar';
 	$templates = array('index.twig');
-//	if (is_home()){
-//		array_unshift($templates, 'home.twig');
-//	}
-	Timber::render($templates, $data);
+	if (is_home()){
+		array_unshift($templates, 'home.twig');
+	}
+	Timber::render($templates, $context);
 
 
 
