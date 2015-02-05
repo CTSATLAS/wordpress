@@ -201,6 +201,10 @@ section#pinwheel {
   padding-bottom: 30px;
   padding-top: 60px;
 }
+section#video {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 footer p,
 footer h1 {
   color: #fff;

@@ -128,6 +128,7 @@ static_front_page - Static Front Page
         $option['']  = '';
         $option['background']  = '';
         $data['option'] = $option;
+        $data['events'] = EventsCal::events();
 
 	return $data;
         

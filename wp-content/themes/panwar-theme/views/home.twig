@@ -1,7 +1,11 @@
 {% extends base_twig %} 
 {% block mission %}
-    {{ parent() }}
+  
+    {{ parent() }}   
+     
     <section id="action">
+<!--        <pre>{{ dump(events) }}</pre>-->
+        
         <div class="container">
             <div class="row">
               
@@ -20,8 +24,18 @@
                 </div>
             </div>
         </div>
-    </section>    
-{% endblock  %}    
+    </section> 
+    
+    <section id="video">
+         <div class="container">
+        <div class="text-center">
+           <iframe width="853" height="480" src="https://www.youtube.com/embed/t2Fvb7xkoRg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </section>
+{% endblock  %} 
+
+
 {% block pinwheel %}
     <section id="pinwheel">
 
