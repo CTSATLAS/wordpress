@@ -2,7 +2,7 @@
 {% block content %}
     <h1 class=""><a href="{{post.link}}">{{post.title}}</a></h1>
         {% if post.thumbnail.src %}
-        <img src="{{post.thumbnail.src|resize(280)}}" class="pull-left" />
+        <img src="{{post.thumbnail.src|resize(220)}}" class="pull-left" />
     {% endif %}	
     <p>{{post.get_preview(25)}}</p>
 {% endblock %}
