@@ -29,7 +29,7 @@ Text Domain: panwar
 .single-post #page > header,
 .single-post #cover > header,
 .single-post .t-wrapper {
-  display: none !important;
+  display: none;
 }
 #page > header,
 .t-wrapper {
