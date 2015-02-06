@@ -14,6 +14,23 @@ Text Domain: panwar
 #page p {
   line-height: 1.6;
 }
+.home #page > header,
+#cover > header,
+.home .t-wrapper {
+  height: 500px;
+  background-position: center center;
+  display: block;
+}
+#page > header,
+#cover > header,
+.t-wrapper {
+  background-image: none;
+}
+.single-post #page > header,
+.single-post #cover > header,
+.single-post .t-wrapper {
+  display: none !important;
+}
 #page > header,
 .t-wrapper {
   background-image: url("images/SesOats2.jpg");
