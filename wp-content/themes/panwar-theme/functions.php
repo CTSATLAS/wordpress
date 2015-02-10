@@ -23,7 +23,6 @@ class EventsCal extends TimberPost {
 
         $default_args = array(
             'post_type' => 'pwcevents',
-            'posts_per_page' => -1,
             'orderby' => 'menu_order',
             'order' => 'ASC',
             'post_status' => 'publish',
@@ -64,7 +63,7 @@ function post_type_templates($template) {
 }
 
 
-add_action('init', 'cptui_register_my_cpt_pwcevents');
+//add_action('init', 'cptui_register_my_cpt_pwcevents');
 function cptui_register_my_cpt_pwcevents() {
 register_post_type('pwcevents', array(
 'label' => 'Upcoming Events',

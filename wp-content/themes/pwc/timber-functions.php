@@ -129,6 +129,7 @@ static_front_page - Static Front Page
         $option['background']  = '';
         $data['option'] = $option;
         $data['events'] = EventsCal::events();
+        $data['events_url'] = get_post_type_archive_link( 'pwcevents' );;
 
 	return $data;
         
