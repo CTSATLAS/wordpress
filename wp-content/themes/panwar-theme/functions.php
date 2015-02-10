@@ -23,7 +23,6 @@ class EventsCal extends TimberPost {
 
         $default_args = array(
             'post_type' => 'pwcevents',
-            'posts_per_page' => -1,
             'orderby' => 'menu_order',
             'order' => 'ASC',
             'post_status' => 'publish',
