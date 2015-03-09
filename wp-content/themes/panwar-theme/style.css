@@ -205,6 +205,10 @@ footer p {
   font-size: 15px;
   font-size: 1.5rem;
 }
+footer p .wp-caption-text {
+  font-weight: 500;
+  font-size: 16px;
+}
 section#mission {
   padding-bottom: 60px;
   padding-top: 30px;
@@ -272,4 +276,13 @@ core-icon.ftr {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+.tablepress tbody td,
+.tablepress tfoot th {
+  /* border-top: 1px solid #ddd; */
+}
+.tablepress tbody td,
+.tablepress tfoot th {
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
 }
