@@ -94,3 +94,14 @@ register_post_type('pwcevents', array(
   'parent' => 'Parent pwcevent',
 )
 ) ); }
+
+add_filter('widget_text', 'do_shortcode');
+
+$ml_widget = MpLoader\Utilities\Widget::factory();
+$ml_widget->add_widget('panwar_slideshow', 'Slideshow', 'Slideshow');
+add_filter('timber_context', 'add_to_timber');
+function add_to_timber($data) {
+    $sidebars['slideshows'] = Timber::get_widgets('panwar_slideshow');
+    $data['theme_sidebars'] = $sidebars;
+    return $data;
+}
