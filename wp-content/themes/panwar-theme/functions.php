@@ -95,11 +95,15 @@ register_post_type('pwcevents', array(
 )
 ) ); }
 
-add_filter('widget_text', 'do_shortcode');
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
 
 $ml_widget = MpLoader\Utilities\Widget::factory();
-$ml_widget->add_widget('panwar_slideshow', 'Slideshow', 'Slideshow');
+
+$ml_widget->add_widget('Slideshow', 'panwar_slideshow', 'Slideshow');
+
 add_filter('timber_context', 'add_to_timber');
+
 function add_to_timber($data) {
     $sidebars['slideshows'] = Timber::get_widgets('panwar_slideshow');
     $data['theme_sidebars'] = $sidebars;

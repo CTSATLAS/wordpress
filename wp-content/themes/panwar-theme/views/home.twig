@@ -1,41 +1,48 @@
 {% extends base_twig %} 
 {% block mission %}
-    {{ sidebars.slideshows }}
-    {{ parent() }}   
-     
-    <section id="action">
-<!--        <pre>{{ dump(events) }}</pre>-->
-        
+    <section>
         <div class="container">
             <div class="row">
-              
+                {{ function('do_shortcode', '[metaslider id=130]')}} 
+            </div>
+        </div>
+    </section>
+
+
+    {{ parent() }} 
+    <section id="action">
+<!--        <pre>{{ dump(events) }}</pre>-->
+
+        <div class="container">
+            <div class="row">
+
                 <div class="text-center fonts crete">
                     <p class="large">                        
                         BE KNOWN. Let us know how we can put our resources to work for you
                     </p>
-                   
-                 
-                   <p>  <button class="btn btn-lg btn-primary lead">
-                           <span class="lead">
-                               Introduce Yourself.
-                           </span> 
-                    </button>   </p> 
-                    
+
+
+                    <p>  <button class="btn btn-lg btn-primary lead">
+                            <span class="lead">
+                                Introduce Yourself.
+                            </span> 
+                        </button>   </p> 
+
                 </div>
             </div>
         </div>
     </section> 
-    
+
     <section id="video">
-         <div class="container">
-        <div class="text-center">
-           <iframe width="853" height="480" src="https://www.youtube.com/embed/t2Fvb7xkoRg" frameborder="0" allowfullscreen></iframe>
+        <div class="container">
+            <div class="text-center">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/t2Fvb7xkoRg" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
     </section>
-<div class="container">
-    <hr />
-</div>
+    <div class="container">
+        <hr />
+    </div>
 {% endblock  %} 
 
 
@@ -43,7 +50,7 @@
     <section id="pinwheel">
 
         <div class="container">
- 
+
 
             <div class="row">
                 <div class="col-md-6 text-center">
@@ -65,9 +72,8 @@
 {%  endblock %}
 
 {% block content %}
-	{% for post in posts %}
-	{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-{% endfor %}
+    {% for post in posts %}
+        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+    {% endfor %}
 
 {% endblock %}
-        
