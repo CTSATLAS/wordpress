@@ -17,12 +17,6 @@
   "license": "MIT",
   "dependencies": {
     "slate-kit": "git://github.com/wp-presskit/slate-kit",
-    "wp.autoload": "git://github.com/sjsandy/wp.autoload",
-    "wp-pagenavi": "git://github.com/lesterchan/wp-pagenavi",
-    "ninja-forms": "git://github.com/wpninjas/ninja-forms",
-    "google-analytics-for-wordpress": "git://github.com/Yoast/google-analytics-for-wordpress",
-    "constant-contact-api": "git://github.com/wp-plugins/constant-contact-api",
-    "akismet": "git://github.com/wp-plugins/akismet",
-    "siteorigin-panels": "git://github.com/siteorigin/siteorigin-panels#~2.0.5"
+    "wp.autoload": "git://github.com/sjsandy/wp.autoload"  
   }
 }
