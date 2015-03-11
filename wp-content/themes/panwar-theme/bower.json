@@ -1,0 +1,30 @@
+{
+  "name": "panwar-theme",
+  "version": "0.0.0",
+  "homepage": "https://github.com/CTSATLAS/wordpress",
+  "description": "panhandle warrior connection theme",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "panwar"
+  ],
+  "authors": [
+    "shawnsandy04@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waypoints": "~3.1.1"
+  }
+}

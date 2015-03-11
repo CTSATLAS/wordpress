@@ -44,6 +44,15 @@ nav .bar li a {
   height: 120px;
   padding-top: 0;
 }
+.shrink .navbar-brand,
+.shrink .navbar-nav li a,
+.shrink .navbar-brand,
+.shrink .bar li a,
+.shrink nav .bar li a {
+  line-height: 50px;
+  height: 50px;
+  padding-top: 0;
+}
 nav .navbar-brand img {
   height: 90px;
   width: auto;
@@ -288,8 +297,18 @@ core-icon.ftr {
 }
 .tablepress img,
 p.attachemnt img {
-  margin: 10px;
+  margin-bottom: 10px;
   padding: 7px;
   border: 1px dotted #bebebe;
   max-width: none;
+}
+.trans-all {
+  -webkit-transition: all 500ms ease-out 1s;
+  -moz-transition: all 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  transition: all 500ms ease-out 1s;
+}
+.hide {
+  display: none;
+  visibility: hidden;
 }
