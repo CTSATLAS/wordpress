@@ -246,6 +246,17 @@ footer a:link,
 footer a:visited {
   color: #fff;
 }
+footer i.fa {
+  font-size: 3.2rem;
+  font-size: 32px;
+}
+footer .social a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+footer span.gc-cs-link {
+  color: #fff;
+}
 .fonts.crete {
   font-family: 'Crete Round', serif;
 }

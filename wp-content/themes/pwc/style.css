@@ -184,6 +184,10 @@ footer p {
 footer footer h1 {
   color: #fff;
 }
+footer i.fa {
+  font-size: 3.2rem;
+  font-size: 32px;
+}
 section#mission {
   padding-bottom: 40px;
 }
