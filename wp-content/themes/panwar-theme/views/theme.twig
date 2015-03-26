@@ -20,7 +20,7 @@
             {% endblock meta %}
             {% block links %}
                 {{ function ("wp_head") }}
-                <!--<link rel="stylesheet" href="{{ theme_url }}/fonts/fontawesome/css/font-awesome.min.css"/>-->
+                <link rel="stylesheet" href="{{ parent_theme_url }}/fonts/fontawesome/css/font-awesome.min.css"/>
                 <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap-styles.css"/>
                 <link rel="stylesheet" href="{{ theme_url }}/css/stylesheet.css"/>
                 <link rel="stylesheet" href="{{ theme_url }}/css/sg.css">
@@ -325,10 +325,15 @@
                                 <div class="col-sm-12">
                                     <span class="text-center">
                                         <ul class="social list-inline ng-scope">
-                                            <li><i class="fa fa-twitter-square"></i></li>
-                                            <li><i class="fa fa-facebook-square"></i></li>
-                                            <li><i class="fa fa-google-plus-square"></i></li>
-                                            <li><i class="fa fa-rss-square"></i></li>
+                                            <li>
+                                            <a href="www.twitter.com/panhandle2015" target="_blank">    <i class="fa fa-twitter-square"></i></a>
+                                            </li>
+                                            <li>
+                                            <a href="http://www.facebook.com/panhandlewarriorconnection" target="_blank">    <i class="fa fa-facebook-square"></i></a>
+                                            </li>
+                                            <li>
+                                            <a href="http://www.instagram.com/panhandlewarriorconnection" target="_blank">    <i class="fa fa-instagram"></i></a>
+                                            </li>
                                         </ul>
                                     </span>
 
