@@ -19,7 +19,7 @@
                 <link rel="pingback" href="{{ site.pingback_url }}"/>
             {% endblock meta %}
             {% block links %}
-                {{ function ("wp_head") }}
+            {{ function ("wp_head") }}
                 <link rel="stylesheet" href="{{ parent_theme_url }}/fonts/fontawesome/css/font-awesome.min.css"/>
                 <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap-styles.css"/>
                 <link rel="stylesheet" href="{{ theme_url }}/css/stylesheet.css"/>
@@ -60,7 +60,7 @@
                                 <div class="collapse navbar-collapse">
                                     <ul class="nav navbar-nav">
                                         <li class="active">
-                                            <a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                            <a href="{{site_url}}">Home <span class="sr-only">(current)</span></a></li>
                                         <li><a href="{{site_url}}/about-us">About Us</a></li>
                                         <!--<li><a href="{{site_url}}/media">Media</a></li>-->
                                         <li><a href="{{site_url}}/events">Events</a></li>
@@ -165,7 +165,7 @@
                                         <!--<core-icon class="ftr" icon="stars"></core-icon>-->
                                     </h1>
                                     <button class="btn btn-lg btn-success">
-                                        <span class="large">Free News Warrior Connection Letter. Sign up Now</span>
+                                        <span class="large">Free PWC Newsletter. Sign up Now</span>
                                     </button>
                                     <p>Sign Up for our free Newsletter and get latest news and updates</p>
 
@@ -326,7 +326,7 @@
                                     <span class="text-center">
                                         <ul class="social list-inline ng-scope">
                                             <li>
-                                            <a href="www.twitter.com/panhandle2015" target="_blank">    <i class="fa fa-twitter-square"></i></a>
+                                            <a href="http://www.twitter.com/panhandle2015" target="_blank">    <i class="fa fa-twitter-square"></i></a>
                                             </li>
                                             <li>
                                             <a href="http://www.facebook.com/panhandlewarriorconnection" target="_blank">    <i class="fa fa-facebook-square"></i></a>
