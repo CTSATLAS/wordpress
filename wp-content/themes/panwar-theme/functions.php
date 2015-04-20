@@ -109,3 +109,83 @@ function add_to_timber($data) {
     $data['theme_sidebars'] = $sidebars;
     return $data;
 }
+
+require_once(get_stylesheet_directory() . '/titan-framework-checker.php');
+
+
+add_action('tf_create_options', 'pwc_theme_options');
+
+function pwc_theme_options(){
+  $titan = TitanFramework::getInstance('panwar');
+
+  $panel = $titan->createAdminPanel( array(
+    'name' => "Panwar Settings",
+    'icon' => 'dashicons-star-half',
+    'position' => '4',
+    'desc' => "Phandle Warrior Connection Site Settings"
+  ));
+
+  $panel->createOption( array(
+
+    'name' => 'Warriors Assited',
+
+    'id' => 'warriors_served',
+
+    'type' => 'text'
+
+) );
+
+  $panel->createOption( array(
+
+    'name' => 'Warriors employed',
+
+    'id' => 'warriors_employed',
+
+    'type' => 'text'
+
+) );
+
+  $panel->createOption( array(
+
+    'name' => 'Warriors VA Healhcare',
+
+    'id' => 'warriors_va_healthcare',
+
+    'type' => 'text'
+
+) );
+
+
+  $panel->createOption( array(
+
+    'name' => 'Warriors EDU benefits',
+
+    'id' => 'warriors_edu',
+
+    'type' => 'text'
+
+) );
+
+
+
+  $panel->createOption( array(
+
+    'name' => 'Warriors housed',
+
+    'id' => 'warriors_housed',
+
+    'type' => 'text'
+
+) );
+
+
+//save
+
+$panel->createOption( array(
+
+    'type' => 'save',
+
+) );
+
+
+}
