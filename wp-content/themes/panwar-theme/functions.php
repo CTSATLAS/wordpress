@@ -116,6 +116,7 @@ require_once(get_stylesheet_directory() . '/titan-framework-checker.php');
 add_action('tf_create_options', 'pwc_theme_options');
 
 function pwc_theme_options(){
+  
   $titan = TitanFramework::getInstance('panwar');
 
   $panel = $titan->createAdminPanel( array(
