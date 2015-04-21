@@ -105,8 +105,11 @@ $ml_widget->add_widget('Slideshow', 'panwar_slideshow', 'Slideshow');
 add_filter('timber_context', 'add_to_timber');
 
 function add_to_timber($data) {
+
+
     $sidebars['slideshows'] = Timber::get_widgets('panwar_slideshow');
     $data['theme_sidebars'] = $sidebars;
+
     return $data;
 }
 
@@ -116,7 +119,7 @@ require_once(get_stylesheet_directory() . '/titan-framework-checker.php');
 add_action('tf_create_options', 'pwc_theme_options');
 
 function pwc_theme_options(){
-  
+
   $titan = TitanFramework::getInstance('panwar');
 
   $panel = $titan->createAdminPanel( array(
@@ -188,5 +191,17 @@ $panel->createOption( array(
 
 ) );
 
+}
+
+
+add_action( 'after_setup_theme', 'myFunc' );
+
+function myFunc() {
+
+    $titan = TitanFramework::getInstance( 'my-theme' );
+
+    $myValue = $titan->getOption( 'my_option_id' );
+
+    // Put $myValue to good use
 
 }
