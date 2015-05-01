@@ -30,6 +30,7 @@ function get_wp_template($template) {
 
 function add_to_context($data) {
 	//default twig file
+
 	$twig_base = 'base.twig';
 	//theme twig replace base twig as default template
 	if (file_exists(trailingslashit(get_stylesheet_directory()).'/views/theme.twig')) {
@@ -42,7 +43,7 @@ function add_to_context($data) {
 	$data['parent_theme_url']    = get_template_directory_uri();
 	$data['is_logged_in'] = is_user_logged_in();
 	$data['theme_mod']    = get_theme_mods();
-	//$data['options']      = wp_load_alloptions();
+	//$data['options']      = get_option('panwar_options');
 	$data['site_url']     = site_url();
 	$data['is_home']      = is_home();
 
@@ -62,7 +63,7 @@ function add_to_context($data) {
 
 	//sidebars
 	$sidebars['sidebar']      = Timber::get_widgets('primary-sidebar');
-	$sidebars['secondary']    = Timber::get_widgets('secondary-sidebar');	
+	$sidebars['secondary']    = Timber::get_widgets('secondary-sidebar');
 	$sidebars['home_sidebar'] = Timber::get_widgets('home-sidebar');
 	$sidebars['footer_links'] = Timber::get_widgets('footer-links');
 	$sidebars['footer_1'] = Timber::get_widgets('footer-1');
@@ -76,8 +77,8 @@ function add_to_context($data) {
 	$sidebars['offline'] = Timber::get_widgets('offline');
 	$sidebars['offline_message'] = Timber::get_widgets('offline_mesasge');
 
-	
-        
+
+
 	$sidebars['primary_menu'] = new TimberMenu('primary');
 
 	$data['sidebars'] = $sidebars;
@@ -112,7 +113,7 @@ function add_to_context($data) {
 	$mobile['ipad']      = $mobile_press->isiPad();
 	$data['mobile']      = $mobile;
 	// endif;
-        
+
         /**
          * get them options
          * title_tagline - Site Title & Tagline
@@ -122,7 +123,7 @@ background_image - Background Image
 nav - Navigation
 static_front_page - Static Front Page
          */
-        
+
         $option['title_tagline']  = get_theme_mod('site_offline', 'A Simple Wordpress them toolkit');
         $option['theme_logo']  = '';
         $option['']  = '';
@@ -132,8 +133,8 @@ static_front_page - Static Front Page
         $data['events_url'] = get_post_type_archive_link( 'pwcevents' );;
 
 	return $data;
-        
-        
+
+
 
 }
 
