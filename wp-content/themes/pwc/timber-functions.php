@@ -30,6 +30,7 @@ function get_wp_template($template) {
 
 function add_to_context($data) {
 	//default twig file
+
 	$twig_base = 'base.twig';
 	//theme twig replace base twig as default template
 	if (file_exists(trailingslashit(get_stylesheet_directory()).'/views/theme.twig')) {
@@ -42,7 +43,7 @@ function add_to_context($data) {
 	$data['parent_theme_url']    = get_template_directory_uri();
 	$data['is_logged_in'] = is_user_logged_in();
 	$data['theme_mod']    = get_theme_mods();
-	$data['options']      = get_option('panwar_options');
+	//$data['options']      = get_option('panwar_options');
 	$data['site_url']     = site_url();
 	$data['is_home']      = is_home();
 

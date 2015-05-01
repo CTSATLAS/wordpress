@@ -98,6 +98,10 @@ register_post_type('pwcevents', array(
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
 
+$opts = get_option('panwar_options', array());
+
+//echo $opts['warriors_served'];
+
 $ml_widget = MpLoader\Utilities\Widget::factory();
 
 $ml_widget->add_widget('Slideshow', 'panwar_slideshow', 'Slideshow');
@@ -106,9 +110,11 @@ add_filter('timber_context', 'add_to_timber');
 
 function add_to_timber($data) {
 
-
+    $opts = get_option('panwar_options');
     $sidebars['slideshows'] = Timber::get_widgets('panwar_slideshow');
-    $data['theme_sidebars'] = $sidebars;
+    //$data['theme_sidebars'] = $sidebars;
+  //  $data['options'] = $opts;
+  //  $data['served'] = $opts[0]["warriorsserved"];
 
     return $data;
 }
@@ -198,10 +204,36 @@ add_action( 'after_setup_theme', 'myFunc' );
 
 function myFunc() {
 
-    $titan = TitanFramework::getInstance( 'my-theme' );
+    $titan = TitanFramework::getInstance( 'pamwar' );
 
-    $myValue = $titan->getOption( 'my_option_id' );
+    $myValue = $titan->getOption( 'warriors' );
 
     // Put $myValue to good use
 
 }
+
+
+//disable sample options
+function removeDemoModeLink() { // Be sure to rename this function to something more unique
+    if ( class_exists('ReduxFrameworkPlugin') ) {
+        remove_filter( 'plugin_row_meta', array( ReduxFrameworkPlugin::get_instance(), 'plugin_metalinks'), null, 2 );
+    }
+    if ( class_exists('ReduxFrameworkPlugin') ) {
+        remove_action('admin_notices', array( ReduxFrameworkPlugin::get_instance(), 'admin_notices' ) );    
+    }
+}
+add_action('init', 'removeDemoModeLink');
+
+
+
+$pwc_customizer = MpLoader\Customizer\Settings::factory();
+$pwc_settings = MpLoader\Customizer\Settings::add_section('pwc-settings', 'PWC Settings', 'PWC Theme Settings');
+$pwc_customizer::add_option($pwc_settings, 'warriors_assisted', 'Warriors Assisted')->set_control_type('input')->customizer();
+
+$pwc_customizer::add_option($pwc_settings, 'warriors_employed', 'Warriors Employed')->set_control_type('input')->customizer();
+
+$pwc_customizer::add_option($pwc_settings, 'warriors_va', 'Warriors VA Care')->set_control_type('input')->customizer();
+
+$pwc_customizer::add_option($pwc_settings, 'warriors_edu', 'Warriors Educated')->set_control_type('input')->customizer();
+
+$pwc_customizer::add_option($pwc_settings, 'warriors_housed', 'Warriors Housed')->set_control_type('input')->customizer();
